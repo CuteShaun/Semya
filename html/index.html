@@ -241,9 +241,39 @@
       SeoText
     </section>
 
-    <section class="subscribe">
-      <h5>Подпишитесь на рассылку и</h5>
-      <h4>Будьте в курсе интересных предложений!</h4>
+    <section class="section subscribe">
+      <div class="container">
+        <div class="row">
+          <h5 class="subscribe__text col-12">Подпишитесь на рассылку и</h5>
+          <h4 class="subscribe__title col-12 heading-main">
+            Будьте в курсе интересных предложений!
+          </h4>
+        </div>
+      </div>
+      <form class="subscribe__form d-flex">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="form-group col-xs-12 col-xl-5 col-lg-6 col-sm-12 col-md-12 no-marg-no-padd"
+            >
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input
+                type="email"
+                class="form-control subscribe__custom-input"
+                id="inputPassword2"
+                placeholder="Введите электронную почту"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="col-xs-12 col-sm-12 col-lg-3 col-xl-2 col-md-12 subscribe__button orange-button"
+            >
+              Подписаться
+            </button>
+          </div>
+        </div>
+      </form>
     </section>
 
     @@include('./footer.html')

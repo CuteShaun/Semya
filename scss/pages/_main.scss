@@ -72,3 +72,64 @@
   background-color: $inputGrey;
   height: 268px;
 }
+
+.subscribe {
+  background-image: url(/img/paris-2017-home.png);
+  background-size: cover;
+  background-position: top center;
+  &__container {
+    max-width: 720px;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &__form {
+    padding: 0 15px;
+  }
+
+  &__button {
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 0 0.25rem 0.25rem 0;
+    background-color: $dark-orange;
+  }
+
+  &__text {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.36;
+    font-size: 3.6rem;
+    letter-spacing: normal;
+    color: $white;
+    margin: 0 auto 56px auto;
+    max-width: 590px;
+  }
+
+  &__custom-input {
+    height: calc(2.25rem + 40px);
+    border-radius: 0.25rem 0 0 0.25rem;
+    font-size: 1.6rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.38;
+    letter-spacing: normal;
+    color: $text-black;
+    padding-left: 2.4rem;
+
+    &::placeholder {
+      opacity: 0.54;
+    }
+  }
+}

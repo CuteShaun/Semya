@@ -47,7 +47,7 @@
               </div>
             </li>
             <li class="main-navigation__item main-navigation__item--2">
-              <a href="#" class="main-navigation__link text">О нас</a>
+              <a href="pages/about.html" class="main-navigation__link text">О нас</a>
             </li>
             <li class="main-navigation__item main-navigation__item--3">
               <a href="#" class="main-navigation__link text">Контакты</a>
@@ -721,14 +721,281 @@
       SeoText
     </section>
 
-    <section class="subscribe">
-      <h5>Подпишитесь на рассылку и</h5>
-      <h4>Будьте в курсе интересных предложений!</h4>
+    <section class="section subscribe">
+      <div class="container">
+        <div class="row">
+          <h5 class="subscribe__text col-12">Подпишитесь на рассылку и</h5>
+          <h4 class="subscribe__title col-12 heading-main">
+            Будьте в курсе интересных предложений!
+          </h4>
+        </div>
+      </div>
+      <form class="subscribe__form d-flex">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div
+              class="form-group col-xs-12 col-xl-5 col-lg-6 col-sm-12 col-md-12 no-marg-no-padd"
+            >
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input
+                type="email"
+                class="form-control subscribe__custom-input"
+                id="inputPassword2"
+                placeholder="Введите электронную почту"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              class="col-xs-12 col-sm-12 col-lg-3 col-xl-2 col-md-12 subscribe__button orange-button"
+            >
+              Подписаться
+            </button>
+          </div>
+        </div>
+      </form>
     </section>
 
-    <footer>
-  Copyright
+    <footer class="footer">
+  <nav class="bottom-nav">
+    <div class="container">
+      <div class="row justify-content-center">
+        <ul class="bottom-nav__list col-2">
+          <h5 class="bottom-nav__title">Туры по Европе</h5>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Италия</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Германия</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Венгрия</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Прага</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Франция</a>
+          </li>
+        </ul>
+        <ul class="bottom-nav__list col-2">
+          <h5 class="bottom-nav__title">Туры по Украине</h5>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 1</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 2</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 3</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 4</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 5</a>
+          </li>
+        </ul>
+        <ul class="bottom-nav__list col-2">
+          <h5 class="bottom-nav__title">Хиты продаж</h5>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 1</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 2</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 3</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 4</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <a class="bottom-nav__link">Тур 5</a>
+          </li>
+        </ul>
+
+        <ul class="bottom-nav__list col-2">
+          <h5 class="bottom-nav__title">Связаться с нами</h5>
+          <li class="bottom-nav__list-item">
+            <div class="bottom-nav__phone-icon">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.54">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.81556 6.05889C3.93556 8.26 5.74 10.0567 7.94111 11.1844L9.65222 9.47333C9.86222 9.26333 10.1733 9.19333 10.4456 9.28667C11.3167 9.57444 12.2578 9.73 13.2222 9.73C13.65 9.73 14 10.08 14 10.5078V13.2222C14 13.65 13.65 14 13.2222 14C5.91889 14 0 8.08111 0 0.777778C0 0.35 0.35 0 0.777778 0H3.5C3.92778 0 4.27778 0.35 4.27778 0.777778C4.27778 1.75 4.43333 2.68333 4.72111 3.55444C4.80667 3.82667 4.74444 4.13 4.52667 4.34778L2.81556 6.05889Z"
+                    fill="#737373"
+                  />
+                </g>
+              </svg>
+            </div>
+            <a class="bottom-nav__link" href="tel:+380487011051">701-10-11</a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <div class="bottom-nav__phone-icon">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.54">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.81556 6.05889C3.93556 8.26 5.74 10.0567 7.94111 11.1844L9.65222 9.47333C9.86222 9.26333 10.1733 9.19333 10.4456 9.28667C11.3167 9.57444 12.2578 9.73 13.2222 9.73C13.65 9.73 14 10.08 14 10.5078V13.2222C14 13.65 13.65 14 13.2222 14C5.91889 14 0 8.08111 0 0.777778C0 0.35 0.35 0 0.777778 0H3.5C3.92778 0 4.27778 0.35 4.27778 0.777778C4.27778 1.75 4.43333 2.68333 4.72111 3.55444C4.80667 3.82667 4.74444 4.13 4.52667 4.34778L2.81556 6.05889Z"
+                    fill="#737373"
+                  />
+                </g>
+              </svg>
+            </div>
+            <a class="bottom-nav__link" href="tel:+380487011051">
+              701-10-51
+            </a>
+          </li>
+          <li class="bottom-nav__list-item">
+            <div class="bottom-nav__phone-icon">
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g opacity="0.54">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M2.81556 6.05889C3.93556 8.26 5.74 10.0567 7.94111 11.1844L9.65222 9.47333C9.86222 9.26333 10.1733 9.19333 10.4456 9.28667C11.3167 9.57444 12.2578 9.73 13.2222 9.73C13.65 9.73 14 10.08 14 10.5078V13.2222C14 13.65 13.65 14 13.2222 14C5.91889 14 0 8.08111 0 0.777778C0 0.35 0.35 0 0.777778 0H3.5C3.92778 0 4.27778 0.35 4.27778 0.777778C4.27778 1.75 4.43333 2.68333 4.72111 3.55444C4.80667 3.82667 4.74444 4.13 4.52667 4.34778L2.81556 6.05889Z"
+                    fill="#737373"
+                  />
+                </g>
+              </svg>
+            </div>
+            <a class="bottom-nav__link" href="mailto:+380487011051"
+              >email@mail.com</a
+            >
+          </li>
+
+          <div class="bottom-nav__icons-box">
+            <div class="bottom-nav__icon bottom-nav__icon--1">
+              <a href="#">
+                <svg
+                  width="12"
+                  height="23"
+                  viewBox="0 0 12 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M11.5481 0.00478554L8.66986 0C5.43624 0 3.34653 2.22168 3.34653 5.66033V8.27012H0.452578C0.202505 8.27012 0 8.48021 0 8.73934V12.5206C0 12.7798 0.202736 12.9896 0.452578 12.9896H3.34653V22.531C3.34653 22.7902 3.54904 23 3.79911 23H7.5749C7.82497 23 8.02748 22.7899 8.02748 22.531V12.9896H11.4112C11.6613 12.9896 11.8638 12.7798 11.8638 12.5206L11.8652 8.73934C11.8652 8.61492 11.8174 8.49576 11.7326 8.40771C11.6479 8.31965 11.5324 8.27012 11.4123 8.27012H8.02748V6.05777C8.02748 4.99442 8.27201 4.45462 9.60873 4.45462L11.5477 4.4539C11.7975 4.4539 12 4.24381 12 3.98492V0.473768C12 0.21511 11.7977 0.00526409 11.5481 0.00478554Z"
+                    fill="#B4B4B4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="bottom-nav__icon bottom-nav__icon--2">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="21"
+                  viewBox="0 0 24 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.954 12.1437L0.423911 10.0694C-0.137769 9.8579 -0.142649 9.06099 0.417431 8.84391L23.1131 0.0450602C23.5942 -0.141946 24.0907 0.281672 23.9859 0.789467L19.913 20.4783C19.817 20.9431 19.2747 21.1539 18.8919 20.8743L13.332 16.8176C12.9943 16.5713 12.5341 16.5845 12.211 16.8491L9.1284 19.3745C8.77056 19.6686 8.23144 19.5048 8.09448 19.0617L5.954 12.1437ZM18.5574 4.34982L7.74952 11.0395C7.33528 11.2965 7.14024 11.7992 7.27408 12.2698L8.44264 16.3963C8.5256 16.6887 8.94792 16.6587 8.98816 16.3566L9.292 14.0937C9.34928 13.6676 9.55152 13.2751 9.86504 12.9818L18.7847 4.64938C18.9515 4.49389 18.7516 4.22994 18.5574 4.34982Z"
+                    fill="#B4B4B4"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div class="bottom-nav__icon bottom-nav__icon--3">
+              <a href="#">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.5 0H16.5C20.6415 0 24 3.3585 24 7.5V16.5C24 20.6415 20.6415 24 16.5 24H7.5C3.3585 24 0 20.6415 0 16.5V7.5C0 3.3585 3.3585 0 7.5 0ZM16.5 21.75C19.395 21.75 21.75 19.395 21.75 16.5V7.5C21.75 4.605 19.395 2.25 16.5 2.25H7.5C4.605 2.25 2.25 4.605 2.25 7.5V16.5C2.25 19.395 4.605 21.75 7.5 21.75H16.5Z"
+                    fill="#B4B4B4"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6 12C6 8.6865 8.6865 6 12 6C15.3135 6 18 8.6865 18 12C18 15.3135 15.3135 18 12 18C8.6865 18 6 15.3135 6 12ZM8.25 12C8.25 14.067 9.933 15.75 12 15.75C14.067 15.75 15.75 14.067 15.75 12C15.75 9.9315 14.067 8.25 12 8.25C9.933 8.25 8.25 9.9315 8.25 12Z"
+                    fill="#B4B4B4"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M18.5 7C19.3284 7 20 6.32843 20 5.5C20 4.67157 19.3284 4 18.5 4C17.6716 4 17 4.67157 17 5.5C17 6.32843 17.6716 7 18.5 7Z"
+                    fill="#B4B4B4"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </ul>
+
+        <ul class="bottom-nav__list col-2">
+          <h5 class="bottom-nav__title">График работы</h5>
+          <li class="bottom-nav__list-item">
+            <span class="bottom-nav__day">Пн-Пт</span>
+            <span class="bottom-nav__time">9.00-18.00</span>
+          </li>
+          <li class="bottom-nav__list-item">
+            <span class="bottom-nav__day">Cб</span>
+            <span class="bottom-nav__time">9.00-14.00</span>
+          </li>
+          <li class="bottom-nav__list-item">
+            <span class="bottom-nav__day">Вс</span>
+            <span class="bottom-nav__time">Выходной</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pay-system-box">
+    <div class="pay-system-box__item">
+      <img src="icons/visa.png" alt="visa" />
+    </div>
+    <div class="pay-system-box__item">
+      <img src="icons/MasterCard.png" alt="mastercard" />
+    </div>
+    <div class="pay-system-box__item">
+      <img src="icons/maestro.png" alt="maestro" />
+    </div>
+    <div class="pay-system-box__item">
+      <img src="icons/PayPal.png" alt="paypal" />
+    </div>
+  </div>
+
+  <div class="rules">
+    <a class="rules__link" href="#">Правила обращения с личными данными</a>
+    <a class="rules__link" href="#">Политика конфиденциальности</a>
+    <a class="rules__link" href="#">Условия использование сайта</a>
+  </div>
 </footer>
+
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"

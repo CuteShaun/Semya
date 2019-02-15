@@ -32,6 +32,18 @@
     min-width: 288px;
     max-height: 223px;
   }
+
+  .subscribe__custom-input {
+    margin-bottom: 8px;
+    border-radius: 5px;
+  }
+
+  .subscribe__button {
+    border-radius: 5px;
+  }
+
+
+
 }
 
 @media (max-width: 767.98px) {
@@ -47,24 +59,6 @@
   .carousel__caption {
     margin-left: 0;
   }
-
-  .carousel__link {
-    // padding-left: 0;
-  }
-
-  .my-3 {
-    // padding: 0;
-  }
-
-  // .carousel-inner-1 .carousel-item-right.active,
-  // .carousel-inner-1 .carousel-item-next {
-  //   transform: translateX(41.5%);
-  // }
-
-  // .carousel-inner-1 .carousel-item-left.active,
-  // .carousel-inner-1 .carousel-item-prev {
-  //   transform: translateX(-61.5%);
-  // }
 
   .tab-box {
     overflow-x: hidden;
