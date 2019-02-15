@@ -1,0 +1,27 @@
+.main-carousel__next,
+.main-carousel__prev {
+  width: 3.5%;
+  height: 100px;
+  top: 35%;
+  opacity: 0.7;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.2);
+  background-image: none;
+  min-width: 32px;
+  background-color: $white;
+  z-index: 10;
+  border-radius: 3px 0 0 3px;
+
+  &:hover {
+    path {
+      stroke: #f48013;
+    }
+  }
+}
+
+.main-carousel__next {
+  border-radius: 3px 0 0 3px;
+}
+
+.main-carousel__prev {
+  border-radius: 0 3px 3px 0;
+}

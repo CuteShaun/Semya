@@ -1,0 +1,26 @@
+//Helpers
+@import "helpers/variables";
+@import "helpers/base";
+@import "helpers/typography";
+@import "helpers/utils";
+
+
+
+//Components
+@import "components/header";
+@import "components/form-container";
+@import "components/footer";
+@import "components/multiples-carousel";
+@import "components/tab-box";
+@import "components/buttons";
+@import "components/desk-slider";
+@import "components/main-slider";
+
+
+//Pages
+@import "pages/main";
+
+//Media
+@import "helpers/media";
+
+

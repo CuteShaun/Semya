@@ -1,0 +1,27 @@
+.orange-button {
+  padding: 18px 40px;
+  border-radius: 5px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.2);
+  background-color: $orange;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  text-decoration: none !important;
+  letter-spacing: normal;
+  text-transform: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: inline-block;
+
+  &:visited,
+  &:link {
+    color: #ffffff;
+  }
+
+  &:hover {
+    background-color: $dark-orange;
+  }
+}
+

@@ -1,0 +1,20 @@
+.multiple-carousel__caption {
+  font-size: 1.8rem;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $text-black;
+  margin-left: 24px;
+  text-align: left;
+}
+
+.directions__next,
+.directions__prev {
+  top: 47%;
+  height: 100px;
+  width: 3.5%;
+  border-radius: 3px;
+  background-color: $orange;
+}

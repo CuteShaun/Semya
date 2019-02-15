@@ -1,0 +1,53 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin-bottom: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+figcaption {
+  cursor: pointer;
+}
+
+// .custom-container {
+//   max-width: 1230px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin: 0 auto;
+// }
+
+.section {
+  padding: 66px 0;
+  text-align: center;
+
+  &--grey {
+    background-color: $inputGrey;
+  }
+}

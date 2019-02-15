@@ -1,0 +1,50 @@
+.form-container {
+  width: 100%;
+  max-width: 9999px;
+  margin: -75px auto 0 auto;
+  position: relative;
+  background-color: transparent;
+  z-index: 2;
+  box-shadow: none;
+  //разобраться, почему здесь box-shadow нужно выключать
+}
+
+.find-tour {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
+  background-color: $white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.2);
+  &__row {
+    &--1 {
+      margin-bottom: 24px;
+    }
+  }
+
+  .custom-select,
+  .form-control {
+    height: calc(2.25rem + 41px);
+    font-size: 1.4rem;
+    background-color: $inputGrey;
+    border: none;
+    color: $text-black;
+    opacity: 0.54;
+    font-weight: 600;
+    option {
+    }
+  }
+}
+
+//change default style for datepicker
+.input-group-append {
+  background-color: $inputGrey;
+}
+.gj-datepicker-bootstrap [role=right-icon] button {
+  border: none !important;
+}
+
+.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons  {
+  top: 20px !important;
+}

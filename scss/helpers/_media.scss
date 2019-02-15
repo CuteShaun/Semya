@@ -1,0 +1,76 @@
+@media (max-width: 1199.98px) {
+  html {
+    font-size: 58%;
+  }
+
+  .testimonials__title {
+    font-size: 2.6rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .find-tour__row--1 {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 991.98px) {
+  html {
+    font-size: 56%;
+  }
+
+  .category-nav-wrapper {
+    display: none;
+  }
+
+  .hidden-col {
+    display: none;
+  }
+
+  .testimonials__img {
+    object-fit: cover;
+    border-radius: 5px;
+    min-width: 288px;
+    max-height: 223px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  html {
+    font-size: 53%;
+  }
+
+  .carousel__price,
+  .heading-secondary {
+    font-size: 1.8rem;
+  }
+
+  .carousel__caption {
+    margin-left: 0;
+  }
+
+  .carousel__link {
+    // padding-left: 0;
+  }
+
+  .my-3 {
+    // padding: 0;
+  }
+
+  // .carousel-inner-1 .carousel-item-right.active,
+  // .carousel-inner-1 .carousel-item-next {
+  //   transform: translateX(41.5%);
+  // }
+
+  // .carousel-inner-1 .carousel-item-left.active,
+  // .carousel-inner-1 .carousel-item-prev {
+  //   transform: translateX(-61.5%);
+  // }
+
+  .tab-box {
+    overflow-x: hidden;
+  }
+
+  .carousel__box {
+    min-width: 287px;
+  }
+}
