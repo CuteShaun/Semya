@@ -22,7 +22,11 @@
       margin-bottom: 24px;
     }
   }
-
+  &--shadow{
+    box-shadow: none;
+    padding: 40px 0;
+    max-width: 1140px;
+  }
   .custom-select,
   .form-control {
     height: calc(2.25rem + 41px);

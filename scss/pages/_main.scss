@@ -133,3 +133,39 @@
     }
   }
 }
+
+
+// catalog
+.no-padding{
+  padding: 0;
+}
+.link{
+  color: $orange;
+  font-weight: 600;
+  &:hover{
+    color: $dark-orange;
+  }
+}
+.mt-8{
+  margin-top:3.2rem ;
+}
+.mb-8{
+  margin-bottom: 3.2rem;
+}
+.sub-title{
+  font-size: 4.9rem;
+  padding: 2.4rem 0;
+  border-bottom: 1px solid #d8d8d8;
+  color: #4e4e4e;
+  font-weight: 700;
+  line-height: 1;
+  span{
+    color: #b8b8b8;
+  }
+}
+
+.heading-secondary--small{
+ font-size: 1.8rem;
+}
+  
+// catalog end

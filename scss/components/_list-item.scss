@@ -1,0 +1,96 @@
+.country{
+    background-color: $dark-orange;
+    color:#fff;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    padding: 3px 9px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .list-item{
+    padding: 48px 0;
+    border-bottom: 1px solid #d8d8d8;
+    display: flex;
+  }
+  
+  .list-item__info{
+    width: 70%;
+    display: flex;
+  }
+  .list-item__calculation{
+    width: 30%;
+    color: #4e4e4e;
+    font-size: 1.6rem;
+    padding-left: 64px;
+    border-left: 1px solid #d8d8d8;
+    label{
+      margin-bottom:16px;
+    }
+    .heading-secondary{
+      margin-bottom: 3.2rem;
+      display: inline-block;
+    }
+    .custom-select{
+      height: calc(2.25rem + 41px);
+      font-size: 1.4rem;
+      background-color: #f7f7f7;
+      border: 0;
+      color: #4e4e4e;
+      opacity: .54;
+      font-weight: 600;
+      padding-left: 24px;
+    }
+    .form-group{
+      margin-bottom: 2.4rem;
+    }
+  }  
+  .list-item__img{
+    position: relative;
+    width: 45%;
+    img{
+      max-width: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  .list-item__text{
+    width: 55%;
+    padding: 0 6.1rem 0 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.57;
+    color: #4e4e4e;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .list-item__price{
+    @extend .carousel__price ;
+    opacity: .65;
+    right: 0;
+  }
+  .price-block{
+    padding: 16px 0;
+    border-top: 1px solid #d8d8d8;
+    font-size: 1.4rem;
+    font-weight: 600;
+    &__sum{
+      color:#ff3333;
+      font-size: 2.4rem;
+      display: inline-block;
+      margin-left: 15px;
+      font-weight: 700;
+    }
+  }
+  .near-tour{
+    background-color: $inputGrey;
+    margin-top: auto;
+    padding: 3.2rem;
+    width: 100%;
+  }
+  .near-data-list{
+    margin: 1.6rem 0 2.4rem;
+    li:not(:last-child){
+      margin-bottom: 10px;
+    }
+  }

@@ -1,0 +1,33 @@
+.breadcrumb{
+    background-color: transparent;
+    font-size: 1.4rem;
+    padding: 24px 0;
+    margin-bottom: 0;
+  }
+  .breadcrumb-item{
+    color: #979797;
+    line-height: 19px;
+    &.active{
+        color:#4e4e4e;
+    }
+    a{
+        color: inherit;
+    }
+  }
+  .page-link{
+    border:none;
+    color:#4e4e4e;
+    border-radius: .25rem;
+    &:hover{
+      background-color: $dark-orange;
+      color:#fff;
+    }
+  }
+  .pagination-lg .page-link{
+    padding: 14px 20px;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .pagination-lg .page-item:first-child .page-link{
+    border-radius: .25rem;
+  }
