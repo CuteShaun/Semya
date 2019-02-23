@@ -27,8 +27,8 @@
   <div class="main-nav-wrapper">
     <div class="container">
       <div class="row">
-        <nav class="main-navigation d-flex justify-content-end">
-          <ul class="d-flex main-navigation__list">
+        <nav class="main-navigation">
+          <ul class="main-navigation__list">
             <li class="main-navigation__item main-navigation__item--1">
               <div class="text navigation-lang">
                 <div class="navigation-lang__text">Русский</div>
@@ -49,7 +49,9 @@
               </div>
             </li>
             <li class="main-navigation__item main-navigation__item--2">
-              <a href="pages/about.html" class="main-navigation__link text">О нас</a>
+              <a href="pages/about.html" class="main-navigation__link text"
+                >О нас</a
+              >
             </li>
             <li class="main-navigation__item main-navigation__item--3">
               <a href="#" class="main-navigation__link text">Контакты</a>
@@ -62,8 +64,8 @@
 
   <div class="main-info">
     <div class="container">
-      <div class="row justify-content-between">
-        <div class="logo-box">
+      <div class="row justify-content-between align-items-center">
+        <a class="logo-box">
           <svg
             width="196"
             height="56"
@@ -107,7 +109,16 @@
               fill="#E36231"
             />
           </svg>
-        </div>
+        </a>
+
+        <button type="button" class="hamburger-btn">
+            &#9776;
+        </button>
+
+        <nav class="hamburger-menu">
+            
+        </nav>
+
         <div class="contact-info">
           <p class="contact-info__time">
             пн-пт 9.00-18.00, сб 9.00-14.00
@@ -146,7 +157,7 @@
     <nav class="category-nav">
       <div class="container">
         <div class="row">
-          <ul class="d-flex category-nav__list">
+          <ul class="category-nav__list">
             <li class="category-nav__list-item category-nav__list-item--1">
               <a href="" class="category-nav__link category-nav__link--1"
                 >Туры по Европе</a
