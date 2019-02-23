@@ -457,6 +457,16 @@ figcaption {
   .orange-button:hover {
     background-color: #e36231; }
 
+.btn--filter {
+  background-color: transparent;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: solid 1px #4e4e4e;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 19px;
+  padding: 15px 24px; }
+
 .multiple-carousel__caption {
   font-size: 1.8rem;
   font-weight: 600;
@@ -509,6 +519,9 @@ figcaption {
   padding: 24px 0;
   margin-bottom: 0; }
 
+.pagination {
+  padding: 0 16px; }
+
 .breadcrumb-item {
   color: #979797;
   line-height: 19px; }
@@ -525,6 +538,10 @@ figcaption {
   .page-link:hover {
     background-color: #e36231;
     color: #fff; }
+
+.page-item.active .page-link {
+  background-color: #e36231;
+  border-color: #e36231; }
 
 .pagination-lg .page-link {
   padding: 14px 20px;
@@ -559,6 +576,15 @@ figcaption {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 991.98px) {
+    .list-item__info {
+      width: 100%; } }
+  @media (max-width: 468px) {
+    .list-item__info {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      padding: 0 16px; } }
 
 .list-item__calculation {
   width: 30%;
@@ -592,6 +618,9 @@ figcaption {
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  @media (max-width: 468px) {
+    .list-item__img {
+      width: 100%; } }
 
 .list-item__text {
   width: 55%;
@@ -613,6 +642,11 @@ figcaption {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
+  @media (max-width: 468px) {
+    .list-item__text {
+      width: 100%;
+      margin-top: 26px;
+      padding: 0; } }
 
 .list-item__price {
   opacity: .65;
@@ -635,6 +669,9 @@ figcaption {
   margin-top: auto;
   padding: 3.2rem;
   width: 100%; }
+  @media (max-width: 991.98px) {
+    .near-tour {
+      display: none; } }
 
 .near-data-list {
   margin: 1.6rem 0 2.4rem; }
@@ -789,6 +826,25 @@ figcaption {
   line-height: 1; }
   .sub-title span {
     color: #b8b8b8; }
+
+.badge:empty {
+  display: inline-block; }
+
+img.badge {
+  vertical-align: middle;
+  max-width: 30px; }
+
+.tour-catalog .btn--filter {
+  display: none; }
+  @media (max-width: 468px) {
+    .tour-catalog .btn--filter {
+      display: inline-block; } }
+
+.navigation--top {
+  display: block; }
+  @media (max-width: 468px) {
+    .navigation--top {
+      display: none; } }
 
 .heading-secondary--small {
   font-size: 1.8rem; }
