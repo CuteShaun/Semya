@@ -1,46 +1,70 @@
 .breadcrumb {
-    background-color: transparent;
-    font-size: 1.4rem;
-    padding: 24px 0;
-    margin-bottom: 0;
+  background-color: transparent;
+  font-size: 1.4rem;
+  padding: 24px 0;
+  margin-bottom: 0;
 }
 
 .pagination {
-    padding: 0 1gitpx;
+  padding: 0 16px;
 }
 
 .breadcrumb-item {
-    color: #979797;
-    line-height: 19px;
-    &.active {
-        color: #4e4e4e;
-    }
-    a {
-        color: inherit;
-    }
+  color: #979797;
+  line-height: 19px;
+  &.active {
+    color: #4e4e4e;
+  }
+  a {
+    color: inherit;
+  }
 }
 
 .page-link {
-    border: none;
-    color: #4e4e4e;
-    border-radius: .25rem;
-    &:hover {
-        background-color: $dark-orange;
-        color: #fff;
-    }
+  border: none;
+  color: #4e4e4e;
+  border-radius: 0.25rem;
+  &:hover {
+    background-color: $dark-orange;
+    color: #fff;
+  }
 }
 
 .page-item.active .page-link {
-    background-color: $dark-orange;
-    border-color: $dark-orange;
+  background-color: $dark-orange;
+  border-color: $dark-orange;
 }
 
 .pagination-lg .page-link {
-    padding: 14px 20px;
-    font-size: 1.4rem;
-    font-weight: 600;
+  padding: 1.4rem 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 .pagination-lg .page-item:first-child .page-link {
-    border-radius: .25rem;
+  border-radius: 0.25rem;
+}
+
+.badge:empty {
+  display: inline-block;
+}
+
+img.badge {
+  vertical-align: middle;
+  max-width: 30px;
+}
+
+.tour-catalog .btn--filter {
+  display: none;
+  @media (max-width: 468px) {
+    display: inline-block;
+    margin-left: 16px;
+  }
+}
+
+.navigation--top {
+  display: block;
+  @media (max-width: 468px) {
+    display: none;
+  }
 }

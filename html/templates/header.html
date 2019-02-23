@@ -1,6 +1,6 @@
 <header class="header">
   <div class="main-nav-wrapper">
-    <div class="container">
+    <div class="container container--custom">
       <div class="row">
         <nav class="main-navigation">
           <ul class="main-navigation__list">
@@ -38,9 +38,9 @@
   </div>
 
   <div class="main-info">
-    <div class="container">
+    <div class="container container--custom">
       <div class="row justify-content-between align-items-center">
-        <a class="logo-box">
+        <a class="logo-box" href="/index.html">
           <svg
             width="196"
             height="56"
@@ -86,12 +86,46 @@
           </svg>
         </a>
 
-        <button type="button" class="hamburger-btn">
-            &#9776;
+        <button type="button" class="hamburger-btn" id="hamburger">
+          &#9776;
         </button>
 
-        <nav class="hamburger-menu">
-            
+        <nav class="hamburger-menu" id="mobile-menu">
+          <button type="button" class="hamburger-close" id="hamburger-close">
+            &#10006;
+          </button>
+          <ul class="hamburger-menu__list">
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Туры по Европе</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Туры по Украине</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Праздничные туры</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Туры для школьников</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Туры в Одессу</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">О нас</a>
+            </li>
+            <li class="hamburger-menu__list-item">
+              <a class="hamburger-menu__link" href="#">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="hamburger-menu-lang">
+            <span class="hamburger-menu-lang__text">Язык</span>
+            <select class="custom-select custom-select--hamburger">
+              <option value="rus">Русский</option>
+              <option value="ua">Английский</option>
+              <option value="engl">Польский</option>
+            </select>
+          </div>
         </nav>
 
         <div class="contact-info">
@@ -130,7 +164,7 @@
 
   <div class="category-nav-wrapper">
     <nav class="category-nav">
-      <div class="container">
+      <div class="container container--custom">
         <div class="row">
           <ul class="category-nav__list">
             <li class="category-nav__list-item category-nav__list-item--1">

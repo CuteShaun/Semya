@@ -13,11 +13,11 @@
       integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
       crossorigin="anonymous"
     />
-    <link href="css/styles.min.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
       rel="stylesheet"
     />
+    <link href="css/styles.min.css" rel="stylesheet" />
     <title>Бюро путешествий семья</title>
   </head>
   <body>
@@ -32,19 +32,19 @@
 
     <section class="section section--grey experts">
       <div class="testimonials">
-        <div class="container">
+        <div class="container container--custom">
           <h1 class="heading-main experts__title">Наши эксперты говорят</h1>
           <div class="row">
-            <div class="col-md-12 col-lg-6 col-xl-6">
-              <div class="testimonials__item testimonials__item--1">
-                <div class="testimonials__img-box">
+            <div class="col-md-12 col-lg-6 col-xl-6 px-md-15 px-lg-15 px-0">
+              <div class="testimonials__item flex-column flex-sm-column flex-md-row testimonials__item--1">
+                <div class="col-12 col-sm-12 col-md-6 testimonials__img-box">
                   <img
                     class="testimonials__img img-fluid"
                     src="img/vien.png"
                     alt="vien"
                   />
                 </div>
-                <div class="testimonials__text">
+                <div class="col-12 col-sm-12 col-md-6 testimonials__text">
                   <h3 class="testimonials__title heading-tertiary">
                     Вена - Зальцбург
                   </h3>
@@ -64,16 +64,16 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-6 col-xl-6 hidden-col">
+            <div class="col-lg-6 col-xl-6 hidden-col px-md-15 px-lg-15 px-0">
               <div class="testimonials__item testimonials__item--2">
-                <div class="testimonials__img-box">
+                <div class="col-md-6 testimonials__img-box">
                   <img
                     class="testimonials__img img-fluid"
                     src="img/vien.png"
                     alt="vien"
                   />
                 </div>
-                <div class="testimonials__text">
+                <div class="col-md-6 testimonials__text">
                   <h3 class="testimonials__title heading-tertiary">
                     Вена - Зальцбург
                   </h3>
@@ -102,7 +102,7 @@
 
     <section class="section directions">
       <h1 class="directions__heading heading-main">Наши направления</h1>
-      <div class="container">
+      <div class="container container--custom">
         <div
           id="multiple-carousel"
           class="multiple-carousel carousel slide"
@@ -242,7 +242,7 @@
     </section>
 
     <section class="section subscribe">
-      <div class="container">
+      <div class="container container--custom">
         <div class="row">
           <h5 class="subscribe__text col-12">Подпишитесь на рассылку и</h5>
           <h4 class="subscribe__title col-12 heading-main">
@@ -251,7 +251,7 @@
         </div>
       </div>
       <form class="subscribe__form d-flex">
-        <div class="container">
+        <div class="container container--custom">
           <div class="row justify-content-center">
             <div
               class="form-group col-xs-12 col-xl-5 col-lg-6 col-sm-12 col-md-12 no-marg-no-padd"
@@ -278,11 +278,15 @@
 
     @@include('./footer.html')
 
+    <div class="overlay" id="overlay"></div>
+
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
@@ -297,11 +301,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
+
     <script>
       $("#datepicker").datepicker({
         uiLibrary: "bootstrap4"

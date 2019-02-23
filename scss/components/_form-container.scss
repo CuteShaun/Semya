@@ -22,22 +22,29 @@
       margin-bottom: 24px;
     }
   }
-  &--shadow{
+  &--shadow {
     box-shadow: none;
     padding: 40px 0;
     max-width: 1140px;
   }
-  .custom-select,
-  .form-control {
-    height: calc(2.25rem + 41px);
-    font-size: 1.4rem;
-    background-color: $inputGrey;
-    border: none;
+}
+
+.custom-select,
+.form-control {
+  height: calc(2.25rem + 41px);
+  font-size: 1.4rem;
+  background-color: $inputGrey;
+  border: none;
+  color: $text-black;
+  opacity: 0.54;
+  font-weight: 600;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  &--hamburger {
+    font-size: 1.65rem;
+    opacity: 1;
     color: $text-black;
-    opacity: 0.54;
-    font-weight: 600;
-    option {
-    }
   }
 }
 
@@ -45,10 +52,11 @@
 .input-group-append {
   background-color: $inputGrey;
 }
-.gj-datepicker-bootstrap [role=right-icon] button {
+.gj-datepicker-bootstrap [role="right-icon"] button {
   border: none !important;
 }
 
-.gj-datepicker-bootstrap [role=right-icon] button .gj-icon, .gj-datepicker-bootstrap [role=right-icon] button .material-icons  {
+.gj-datepicker-bootstrap [role="right-icon"] button .gj-icon,
+.gj-datepicker-bootstrap [role="right-icon"] button .material-icons {
   top: 20px !important;
 }
