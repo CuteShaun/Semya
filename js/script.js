@@ -68,3 +68,6 @@ function multipleCarousel() {
 
 multipleCarousel();
 changeControlHeight();
+
+
+//hamburger
