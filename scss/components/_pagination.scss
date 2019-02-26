@@ -5,10 +5,6 @@
   margin-bottom: 0;
 }
 
-.pagination {
-  padding: 0 16px;
-}
-
 .breadcrumb-item {
   color: #979797;
   line-height: 19px;
@@ -34,7 +30,9 @@
   background-color: $dark-orange;
   border-color: $dark-orange;
 }
-
+.page-item:not(:last-child){
+	margin-right:4px;
+}
 .pagination-lg .page-link {
   padding: 1.4rem 2rem;
   font-size: 1.4rem;

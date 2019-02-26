@@ -730,9 +730,6 @@ figcaption {
   padding: 24px 0;
   margin-bottom: 0; }
 
-.pagination {
-  padding: 0 16px; }
-
 .breadcrumb-item {
   color: #979797;
   line-height: 19px; }
@@ -753,6 +750,9 @@ figcaption {
 .page-item.active .page-link {
   background-color: #e36231;
   border-color: #e36231; }
+
+.page-item:not(:last-child) {
+  margin-right: 4px; }
 
 .pagination-lg .page-link {
   padding: 1.4rem 2rem;
@@ -814,8 +814,7 @@ img.badge {
     .list-item__info {
       -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
-              flex-wrap: wrap;
-      padding: 0 16px; } }
+              flex-wrap: wrap; } }
 
 .list-item__calculation {
   width: 30%;
