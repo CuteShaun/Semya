@@ -5,8 +5,6 @@
   position: relative;
   background-color: transparent;
   z-index: 2;
-  box-shadow: none;
-  //разобраться, почему здесь box-shadow нужно выключать
 }
 
 .find-tour {
@@ -27,6 +25,10 @@
     padding: 40px 0;
     max-width: 1140px;
   }
+
+  @media(max-width: 768px) {
+    padding: 15px 24px;
+  }
 }
 
 .custom-select,
@@ -36,17 +38,26 @@
   background-color: $inputGrey;
   border: none;
   color: $text-black;
-  opacity: 0.54;
   font-weight: 600;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 5px;
+  max-width: 100%;
+  outline: none;
 
   &--hamburger {
     font-size: 1.65rem;
     opacity: 1;
     color: $text-black;
   }
+
+  &:focus {
+    background-color: $inputGrey;
+    box-shadow: inset 0 0 0 2px $orange !important;
+  }
 }
+
+//change date-picker default box-shadow behavior
 
 //change default style for datepicker
 .input-group-append {

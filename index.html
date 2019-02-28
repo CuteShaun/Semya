@@ -7,12 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
       rel="stylesheet"
@@ -225,7 +220,10 @@
     </nav>
   </div>
 </header>
- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+
+
+    <section class="slider-section">
+      <!-- <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img
@@ -295,14 +293,72 @@
     </span>
     <span class="sr-only">Next</span>
   </a>
+</div> -->
+
+<div class="main-slider-wrapper">
+  <div class="main-slider" id="main-slider">
+    <div class="carousel-item">
+      <img
+        class="d-block w-100"
+        src="/img/banner-home3.png"
+        alt="First slide"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        class="d-block w-100"
+        src="/img/banner-home3.png"
+        alt="Second slide"
+      />
+    </div>
+    <div class="carousel-item">
+      <img
+        class="d-block w-100"
+        src="/img/banner-home3.png"
+        alt="Third slide"
+      />
+    </div>
+  </div>
+  <button class="main-slider__prev" type="button">
+    <svg
+      width="15"
+      height="23"
+      viewBox="0 0 15 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M12.9248 21.5752L2.84963 11.5L12.9248 1.42484"
+        stroke="#737373"
+        stroke-width="4"
+      />
+    </svg>
+  </button>
+  <button class="main-slider__next" type="button">
+    <svg
+      width="15"
+      height="23"
+      viewBox="0 0 15 23"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.42484 1.42484L11.5 11.5L1.42484 21.5752"
+        stroke="#737373"
+        stroke-width="4"
+      />
+    </svg>
+  </button>
 </div>
+
+    </section>
 
     <div class="form-container padding15">
   <form class="find-tour">
     <div class="find-tour__row find-tour__row--1">
       <div class="form-row">
         <div class="form-group col-xl-4">
-          <select id="" class="custom-select">
+          <select id="" class="custom-select" required>
             <option >Куда отправиться?
             </option>
             <option>...</option>
@@ -318,21 +374,24 @@
     <div class="find-tour__row find-tour__row--2">
       <div class="form-row">
         <div class="form-group col-xl-4">
-          <select id="inputState" class="custom-select">
+          <select id="inputState" class="custom-select" required>
             <option selected>Тип тура</option>
-            <option>...</option>
+            <option>Однодневный</option>
+            <option>Многодневный</option>
           </select>
         </div>
 
         <div class="form-group col-xl-4">
-          <select id="inputState" class="custom-select">
+          <select id="inputState" class="custom-select" required>
             <option selected>Город отправления</option>
-            <option>...</option>
+            <option>Одесса</option>
+            <option>Львов</option>
+            <option>Киев</option>
           </select>
         </div>
 
         <div class="gorm-group col-xl-4">
-          <input class="form-control" type="text" />
+          <input class="form-control" type="text" placeholder="Искать по названию" required/>
         </div>
       </div>
     </div>
@@ -561,7 +620,9 @@
           <h1 class="heading-main experts__title">Наши эксперты говорят</h1>
           <div class="row">
             <div class="col-md-12 col-lg-6 col-xl-6 px-md-15 px-lg-15 px-0">
-              <div class="testimonials__item flex-column flex-sm-column flex-md-row testimonials__item--1">
+              <div
+                class="testimonials__item flex-column flex-sm-column flex-md-row testimonials__item--1"
+              >
                 <div class="col-12 col-sm-12 col-md-6 testimonials__img-box">
                   <img
                     class="testimonials__img img-fluid"
@@ -1145,14 +1206,16 @@
   </div>
 </footer>
 
+<div class="overlay" id="overlay"></div>
 
-    <div class="overlay" id="overlay"></div>
 
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
       crossorigin="anonymous"
     ></script>
+
+    <script src="js/slick.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script

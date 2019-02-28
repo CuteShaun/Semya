@@ -2,7 +2,9 @@
 @import "helpers/base";
 @import "helpers/typography";
 @import "helpers/utils";
+
 //Components
+@import "components/slick";
 @import "components/header";
 @import "components/form-container";
 @import "components/footer";
@@ -13,6 +15,7 @@
 @import "components/main-slider";
 @import "components/pagination";
 @import "components/list-item";
+
 //Pages
 @import "pages/main";
 //Media
