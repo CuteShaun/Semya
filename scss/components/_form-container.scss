@@ -26,8 +26,34 @@
     max-width: 1140px;
   }
 
-  @media(max-width: 768px) {
-    padding: 15px 24px;
+  @media (max-width: 768px) {
+    padding: 16px 24px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 16px;
+  }
+}
+
+.custom-select__wrapper {
+  margin-bottom: 12px;
+
+  &--checkbox {
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+  }
+}
+
+.form-check-input {
+  position: initial;
+  margin: 0;
+
+}
+
+.custom-select {
+  &--info {
+    margin-bottom: 12px;
   }
 }
 
@@ -39,8 +65,8 @@
   border: none;
   color: $text-black;
   font-weight: 600;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 24px;
+  padding-right: 24px;
   border-radius: 5px;
   max-width: 100%;
   outline: none;

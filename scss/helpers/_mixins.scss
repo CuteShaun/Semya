@@ -1,0 +1,28 @@
+@mixin sectionNum() {
+  &:before {
+    color: white;
+    position: absolute;
+    top: -4px;
+    left: -47px;
+    counter-increment: h4;
+    content: counter(h4);
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 1.8rem;
+    transition: all 225ms ease-in-out;
+    transition-delay: 0.1s;
+    background-color: $dark-orange;
+
+    @media (max-width: 500px) {
+      top: -8px;
+      left: -2px;
+    }
+  }
+}

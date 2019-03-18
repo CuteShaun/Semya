@@ -2,6 +2,7 @@
 @import "helpers/base";
 @import "helpers/typography";
 @import "helpers/utils";
+@import "helpers/mixins";
 
 //Components
 @import "components/slick";
@@ -18,5 +19,6 @@
 
 //Pages
 @import "pages/main";
+@import "pages/checkout";
 //Media
 @import "helpers/media";

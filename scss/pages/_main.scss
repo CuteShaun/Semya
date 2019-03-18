@@ -8,6 +8,8 @@
   }
 }
 
+//tabs
+
 .tab-content {
   overflow-x: hidden;
 }
@@ -16,19 +18,37 @@
   border-bottom: none;
 }
 
-.experts__title {
-  margin-bottom: 64px;
+.nav-link {
+  padding: 15px;
+
+  @media (max-width: 500px) {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: left;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
 }
 
 .testimonials {
   margin-bottom: 55px;
   display: flex;
+
   &__img-box {
     @media (min-width: 0px) and (max-width: 767px) {
       margin-bottom: 25px;
       padding: 0;
     }
   }
+
+  &__img {
+    @media(max-width: 500px) {
+      width: 100%;
+    }
+  }
+
   &__item {
     display: flex;
     &:not(:last-child) {
@@ -64,9 +84,6 @@
 
 .directions {
   position: relative;
-  &__heading {
-    margin-bottom: 64px;
-  }
 }
 
 .seo {
@@ -94,6 +111,11 @@
     border: none;
     border-radius: 0 0.25rem 0.25rem 0;
     background-color: $dark-orange;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $orange;
+    }
   }
   &__text {
     color: $white;
@@ -106,12 +128,6 @@
     margin-bottom: 16px;
   }
   &__title {
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.36;
-    font-size: 3.6rem;
-    letter-spacing: normal;
-    color: $white;
     margin: 0 auto 56px auto;
     max-width: 590px;
   }
@@ -193,3 +209,84 @@ img.badge {
 }
 
 // catalog end
+
+
+
+
+
+
+
+//base style
+.page {
+  margin-top: 24px;
+}
+
+
+//about page style
+
+.about {
+  
+}
+
+.about__heading {
+}
+
+.about__item {
+  &:not(:last-child) {
+    @media (max-width: 768px) {
+      margin-bottom: 6.4rem;
+    }
+
+    @media (max-width: 500px) {
+      margin-bottom: 5.8rem;
+    }
+  }
+}
+
+.about__img {
+  object-fit: cover;
+  height: auto;
+}
+
+
+//contacts page style
+
+
+.contacts-social__icon-box {
+  @extend .bottom-nav__icons-box
+}
+
+.contacts__text {
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.36;
+  letter-spacing: normal;
+  color: #4e4e4e;
+}
+
+.contacts__item {
+  display: flex;
+  margin-bottom: 4rem;
+}
+
+.contacts__icon {
+  margin-right: 19px;
+}
+
+.contacts-social {
+  border: 1px solid rgba(151, 151, 151, 0.5);
+  padding: 24px;
+  border-radius: 4px;
+}
+
+.contacts-social__icon-box {
+  margin-top: 24px;
+}
+
+#map {
+  @media (max-width: 768px) {
+    height: 320px;
+  }
+}

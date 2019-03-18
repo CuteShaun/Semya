@@ -119,8 +119,6 @@
 .category-nav {
   display: flex;
   margin: 0 auto;
-  padding-top: 14px;
-  padding-bottom: 14px;
 }
 
 .category-nav__list {
@@ -135,6 +133,14 @@
   line-height: 1.33rem;
   font-weight: 700;
   color: $white;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1.5px solid transparent;
+
+  &:hover {
+    border-color: $white;
+    color: $white;
+  }
 }
 
 .category-nav__dot {

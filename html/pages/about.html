@@ -8,12 +8,7 @@
         content="width=device-width, initial-scale=1, shrink-to-fit=no"
       />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <link
-        rel="stylesheet"
-        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
-        crossorigin="anonymous"
-      />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
       <link href="../css/styles.min.css" rel="stylesheet" />
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
@@ -24,9 +19,40 @@
   </head>
   <body>
     @@include('../templates/header.html')
+    <section class="page about">
 
-    <h1>About</h1>
+    <div class="container container--custom">
+
+      <div class="row d-flex justify-content-between">
+
+
+      <div class="about__item col-12 col-lg-4 col-md-4 col-sm-11 px-0">
+        <h1 class="about__heading heading-page heading-page--left">
+          О нас
+        </h1>
+
+        <p class="text-page">
+          Наша команда специализируется на семейном туризме. Мы хотим, чтобы как
+          можно больше людей путешествовали всей семьей. Открывали мир для себя
+          и своих детей. Учились и узнавали что-то новое вместе. Наши менеджеры
+          подскажут вам особенности путешествий с детьми и как сделать их
+          комфортнее. У нас вы сможете выбрать себе тур под любой бюджет, дату
+          или событие.
+        </p>
+      </div>
+
+      <div class="about__item col-12 col-lg-7 col-md-7 col-sm-12 px-0">
+        <img class="about__img img-fluid" src="https://via.placeholder.com/810x530.png">
+      </div>
+
+    </div>
+
+    </div>
+
+    </section>
 
     @@include('../templates/footer.html')
   </body>
+
+  <script src="../js/hamburger.js"></script>
 </html>

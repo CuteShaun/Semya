@@ -115,6 +115,21 @@
 }
 
 .main-slider {
+
+  &__item {
+
+    @media (max-width: 768px) {
+      height: 270px;
+    }
+  }
+
+  &__img {
+    @media (max-width: 768px) {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
   &__prev,
   &__next {
     padding: 3.7rem 1.65rem;
@@ -147,4 +162,12 @@
     right: 0;
     border-radius: 5px 0 0 5px;
   }
+}
+
+
+//multiple slider one slide, 3 show
+
+.multiple-one-slider {
+
+  
 }

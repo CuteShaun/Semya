@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="../css/bootstrap.min.css" />
+      <link href="../css/styles.min.css" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet"
+      />
+      <title>Бюро путешествий семья</title>
+    </head>
+  </head>
+  <body>
+    @@include('../templates/header.html')
+    <section class="page checkout">
+      <div class="container container--custom">
+        <div class="row d-flex">
+          <h1 class="checkout__heading heading-page heading-page--left mx-0">
+            Форма бронирования тура
+          </h1>
+
+          <form class="user-form" id="user-form">
+            <div class="row mx-0">
+              <div class="col-md-8 px-0 content-parent">
+                <section class="user-form__section user-form__info">
+                  <div class="user-form__content">
+                    <h4 class="checkout__title">
+                      Информация о путешественниках
+                    </h4>
+
+                    <div class="custom-select__wrapper mb-10">
+                      <select name="" id="quantity" class="custom-select">
+                        <option value="" disabled selected>Взрослых</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                      </select>
+                    </div>
+                    <div class="custom-select__wrapper mb-10">
+                      <select name="" id="childrens" class="custom-select">
+                        <option value="" disabled selected
+                          >Детей до 12 лет</option
+                        >
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                      </select>
+                    </div>
+
+                    <div class="custom-select__wrapper">
+                      <select name="" id="tour-date" class="custom-select">
+                        <option value="" selected>25.12.2018 - 28.12</option>
+                        <option value="">10.01.2019 - 13.01</option>
+                      </select>
+                    </div>
+
+                    <div class="user-form__button-box">
+                      <button type="button" class="user-button" id="user-btn">
+                        Продолжить
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="user-form__section user-form__hotel">
+                  <div class="user-form__content user-form__content--border">
+                    <h4 class="checkout__title">
+                      Размещение в гостинице
+
+                      <span class="checkout__hotel">
+                        Отель 3/4*
+                      </span>
+                    </h4>
+
+                    <div
+                      class="custom-select__wrapper custom-select__wrapper--info mb-10"
+                    >
+                      <select
+                        name=""
+                        id="rooms-quantity"
+                        class="custom-select custom-select--info"
+                      >
+                        <option value="" selected>1 номер</option>
+                        <option value="">2 номера</option>
+                        <option value="">3 номера</option>
+                        <option value="">4 номера</option>
+                      </select>
+
+                      <span
+                        class="checkout__add-info checkout__add-info--border"
+                      >
+                        Для более чем 4 человек - минимальный заказ 2 номера
+                      </span>
+                    </div>
+                    <div class="custom-select__wrapper mb-10">
+                      <select
+                        name=""
+                        id="room-type-1"
+                        class="custom-select custom-select--info"
+                      >
+                        <option value="" selected
+                          >Одноместный номер с двухспальной кроватью</option
+                        >
+                        <option value=""
+                          >Двухместный номер с общей кроватью</option
+                        >
+                        <option value=""
+                          >Двухместный номер с раздельной кроватью</option
+                        >
+                      </select>
+
+                      <span
+                        class="checkout__add-info checkout__add-info--after-border"
+                      >
+                        Турист, заказавший одно место в многодневном
+                        путешествии, оплачивает одноместный номер. По
+                        возможности фирма попытается найти пару в отеле, но
+                        гарантий не дает.
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="user-form__content user-form__content--padding">
+                    <div class="traveler-info">
+                      <h5 class="traveler-info__title">
+                        1) Одноместный номер с двухспальной кроватью
+                      </h5>
+
+                      <div class="traveler-info__item">
+                        <h5 class="traveler-info__inner-title">
+                          Путешественник 1 (Взрослый)
+                        </h5>
+
+                        <div class="custom-select__wrapper">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Имя"
+                            required
+                          />
+                        </div>
+
+                        <div class="custom-select__wrapper">
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="Фамилия"
+                            required
+                          />
+                        </div>
+
+                        <select
+                          name=""
+                          id="room-type-1"
+                          class="custom-select custom-select--info"
+                        >
+                          <option value="" selected disabled>Пол</option>
+                          <option value="">Мужской</option>
+                          <option value="">Женский</option>
+                        </select>
+
+                        <select
+                          name=""
+                          id="room-type-1"
+                          class="custom-select custom-select--info"
+                        >
+                          <option value="" selected disabled
+                            >Город отправления</option
+                          >
+                          <option value="">Одесса</option>
+                        </select>
+
+                        <div
+                          class="custom-select__wrapper custom-select__wrapper--checkbox"
+                        >
+                          <input
+                            class="checkout__checkbox form-check-input"
+                            type="checkbox"
+                            id="first-class"
+                            placeholder="Фамилия"
+                            required
+                          />
+                          <label
+                            class="checkout__checkbox-label"
+                            for="first-class"
+                          >
+                            Место 1 класса - 15.00 €
+                          </label>
+                        </div>
+                        <div
+                          class="custom-select__wrapper custom-select__wrapper--checkbox"
+                        >
+                          <input
+                            class="checkout__checkbox form-check-input"
+                            type="checkbox"
+                            placeholder="Фамилия"
+                            id="second-class"
+                            required
+                          />
+                          <label
+                            class="checkout__checkbox-label"
+                            for="second-class"
+                          >
+                            Место 2 класса - 10.00 €
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="user-form__button-box">
+                      <button type="button" class="user-button" id="user-btn">
+                        Продолжить
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <section
+                  class="user-form__section user-form__reponsible-person"
+                >
+                  <div class="user-form__content">
+                    <h4 class="checkout__title">
+                      Ответственное лицо
+                    </h4>
+
+                    <div class="custom-select__wrapper">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Имя"
+                        id="second-class"
+                        required
+                      />
+                    </div>
+
+                    <div class="custom-select__wrapper">
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Фамилия"
+                        id="second-class"
+                        required
+                      />
+                    </div>
+
+                    <div class="custom-select__wrapper">
+                      <input
+                        class="form-control"
+                        type="email"
+                        placeholder="Электронная почта"
+                        id="second-class"
+                        required
+                      />
+                    </div>
+
+                    <div class="custom-select__wrapper">
+                      <input
+                        class="form-control"
+                        type="text"
+                        inputmode="numeric"
+                        placeholder="Контактный номер телефона  "
+                        id="second-class"
+                        required
+                      />
+                    </div>
+
+                    <div class="user-form__button-box">
+                      <button type="button" class="user-button" id="user-btn">
+                        Продолжить
+                      </button>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="user-form__section">
+                  <div class="user-form__content">
+                    <h4 class="checkout__title">
+                      Способ оплаты
+                    </h4>
+
+                    <div class="radio-group">
+                      <div
+                        class="custom-select__wrapper custom-select__wrapper--checkbox"
+                      >
+                        <input
+                          class="checkout__checkbox form-radio-input"
+                          type="radio"
+                          placeholder="Фамилия"
+                          id="privat24"
+                          required
+                          name="paymenth-method"
+                        />
+                        <label class="checkout__checkbox-label" for="privat24">
+                          <img
+                            class="img-paymenth"
+                            src="../icons/privat24.png"
+                            alt="privat24"
+                          />
+                          Privat24
+                        </label>
+                      </div>
+
+                      <div
+                        class="custom-select__wrapper custom-select__wrapper--checkbox"
+                      >
+                        <input
+                          class="checkout__checkbox form-radio-input"
+                          type="radio"
+                          id="cards"
+                          name="paymenth-method"
+                          required
+                        />
+                        <label class="checkout__checkbox-label" for="cards">
+                          <img
+                            class="img-paymenth"
+                            src="../icons/visa.png"
+                            alt="visa"
+                          />
+                          <img
+                            class="img-paymenth"
+                            src="../icons/Mastercard.png"
+                            alt="mastercard"
+                          />
+                          Visa/Mastercard
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="additional-payment-info" id="add-payment">
+                      <div class="additional-payment-info__content">
+                        <div class="custom-select__wrapper">
+                          <input
+                            class="form-control"
+                            type="text"
+                            inputmode="numeric"
+                            placeholder="0000 0000 0000 0000"
+                            id="card-number"
+                            required
+                            minlength="16"
+                            maxlength="16"
+                          />
+                        </div>
+
+                        <div class="custom-select__wrapper">
+                          <input
+                            class="form-control"
+                            type="text"
+                            inputmode="numeric"
+                            placeholder="03/2021"
+                            id="card-date"
+                            required
+                          />
+                        </div>
+
+                        <div class="custom-select__wrapper">
+                          <input
+                            class="form-control ccv"
+                            type="text"
+                            inputmode="numeric"
+                            placeholder="CCV"
+                            id="card-code"
+                            required
+                            minlength="3"
+                            maxlength="4"
+                          />
+                        </div>
+                      </div>
+
+                      <div class="user-form__button-box">
+                        <button type="button" class="user-button" id="user-btn">
+                          Продолжить
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+
+              <div class="col-md-4 px-0 order-aside-parent">
+                <aside class="order-aside">
+                  <h4 class="checkout__title checkout__title--no-pseudo">
+                    Ваш заказ
+                  </h4>
+
+                  <div class="order-aside__img-box">
+                    <img
+                      class="order-aside__img"
+                      src="../img/checkout.png"
+                      alt="place"
+                    />
+                  </div>
+
+                  <h5 class="order-aside__title">
+                    Мюнхен. Замки Баварии
+                  </h5>
+
+                  <div class="aside-content">
+                    <div class="aside-content__item">
+                      <span class=" aside-content__text"> Дата выезда:</span
+                      ><span class="aside-content__value">
+                        25.12.2018 - 28.12
+                      </span>
+                    </div>
+                    <div class="aside-content__item">
+                      <span class="aside-content__text">Места посещений:</span
+                      ><span class="aside-content__value">
+                        Германия, Мюнхен
+                      </span>
+                    </div>
+                    <div class="aside-content__item">
+                      <span class="aside-content__text"> Длительность:</span
+                      ><span class="aside-content__value">4д., 3н.</span>
+                    </div>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </form>
+
+          <div class="safety-text">
+            Все ваши данные защищены и третьим лицам не передаются.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    @@include('../templates/footer.html')
+  </body>
+</html>

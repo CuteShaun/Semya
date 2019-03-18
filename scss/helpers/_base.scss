@@ -49,17 +49,22 @@ figcaption {
 }
 
 .section {
-  padding: 66px 0;
+  padding: 6.6rem 0;
   text-align: center;
 
   &--grey {
     background-color: $inputGrey;
+  }
+
+  @media (max-width: 500px) {
+    padding: 4.8rem 0;
   }
 }
 
 .container {
 
   &--custom {
+
     @media (min-width: 280px) and (max-width: 360px) {
       max-width: 288px;
     }

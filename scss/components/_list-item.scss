@@ -84,7 +84,7 @@
 }
 
 .list-item__price {
-    @extend .carousel__price;
+    @extend .multiple-one-carousel__price;
     opacity: .65;
     right: 0;
 }
