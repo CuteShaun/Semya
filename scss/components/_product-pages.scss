@@ -7,6 +7,9 @@
     display: flex;
     width: 100%;
     max-width: 100%;
+    @media (max-width:468px) {
+        flex-wrap:wrap;
+    }
 }
 
 .slider-nav {
@@ -15,12 +18,26 @@
     .slider-nav__slides {
         height: 62px;
         margin-bottom: 6px;
+        @media (max-width:468px){
+            height: auto;
+            padding: 0 .6rem;
+            margin-bottom: 0;
+        }
+    }
+    @media (max-width:468px){
+        width: 100%;
     }
 }
 
 .slider-for {
     width: calc(100% - 78px);
-    padding: 0 1.2rem
+    padding: 0 1.2rem;
+    @media (max-width:468px){
+        width: 100%;
+        padding: 0;
+        order:-1;
+        margin-bottom: .6rem;
+    }
 }
 
 .slider-nav img,
@@ -38,9 +55,9 @@
     font-weight: 600;
     line-height: 1.36;
     letter-spacing: normal;
-    color: #4e4e4e;
+    color: $text-black;
     border: none;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $hamburgerBorderColor;
     background-color: transparent;
     padding: 2rem 0;
     cursor: pointer;
@@ -55,14 +72,18 @@
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.57;
-    color: #4e4e4e;
+    color: $text-black;
+    @media (max-width:468px){
+        -webkit-mask-image: linear-gradient(top,#000 calc(100% - 200px),transparent);
+    mask-image: linear-gradient(top,#000 calc(100% - 200px),transparent);
+    }
     p+p {
         margin-top: 1.5rem;
     }
 }
 
 .contact-block {
-    background-color: #f7f7f7;
+    background-color:$inputGrey;
     border-radius: 5px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
@@ -77,10 +98,10 @@
 }
 
 .contact-block__number {
-    color: #4e4e4e;
+    color: $text-black;
     font-weight: 600;
     font-size: 1.4rem;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $hamburgerBorderColor;
     padding-bottom: 1.6rem;
     a {
         font-size: 2.4rem;
@@ -107,15 +128,15 @@
     p:first-child {
         font-size: 1.8rem;
         font-weight: bold;
-        color: #4e4e4e;
+        color: $text-black;
         margin-bottom: 3.3rem;
     }
     table {
         width: 100%;
         font-size: 1.3rem;
-        border: 1px solid #d8d8d8;
+        border: 1px solid $hamburgerBorderColor;
         thead {
-            background-color: #f7f7f7;
+            background-color: $inputGrey;
         }
         th,
         td {
@@ -130,7 +151,7 @@
             padding-right: 2.5rem;
         }
         tbody tr td {
-            border-bottom: 1px solid #d8d8d8
+            border-bottom: 1px solid $hamburgerBorderColor;
         }
     }
     ul li {
@@ -146,20 +167,30 @@
 .tag {
     display: inline-block;
     font-size: 1.4rem;
-    color: #4e4e4e;
+    color: $text-black;
     padding: 1.8rem 2.4rem;
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
-    border: solid 1px #d8d8d8;
+    border: solid 1px $hamburgerBorderColor;
     margin-right: 1.2rem;
     margin-top: 1.2rem;
+    @media (max-width:468px){
+        display: list-item;
+        border:none;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .alert {
     padding: 3.2rem;
+    &-warning{
+        background-color: #fff0d7;
+        border-color: #fff0d7;
+    }
     p {
         font-size: 1.8rem;
         font-weight: bold;
@@ -169,8 +200,11 @@
 
 .list-tour__item {
     padding-bottom: 2.3rem;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $hamburgerBorderColor;
     margin-top: 4.8rem;
+    @media (max-width:468px){
+        margin-top: 2.3rem;
+    }
 }
 
 .accordion__head {
@@ -211,9 +245,9 @@
         font-weight: 600;
         line-height: 1.36;
         letter-spacing: normal;
-        color: #4e4e4e;
+        color: $text-black;
         border: none;
-        border: 1px solid #d8d8d8;
+        border: 1px solid $hamburgerBorderColor;
         border-radius: 4px;
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -231,9 +265,9 @@
         }
         &:hover,
         &.active {
-            color: #fff;
-            border-color: #e36231;
-            background-color: #9c401c;
+            color: $white;
+            border-color: $dark-orange;
+            background-color: $dark-orange;
         }
     }
 }
@@ -242,7 +276,7 @@
     font-size: 2.4rem;
     font-weight: 600;
     span {
-        color: #ff0000;
+        color: $red;
         font-weight: bold;
     }
     &~p {
@@ -257,11 +291,11 @@
 
 .list-tour-box {
     padding-bottom: 10rem;
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $hamburgerBorderColor;
 }
 
 .border-b {
-    border-bottom: 1px solid #d8d8d8;
+    border-bottom: 1px solid $hamburgerBorderColor;
 }
 
 @media (max-width:768px) {

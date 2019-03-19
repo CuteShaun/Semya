@@ -274,7 +274,7 @@
                             <p>Звоните:</p>
                             <a href="tel:+4921197633942">+49 211 976 33 942</a>
                         </div>
-                        <div class="contact-block__timetable">
+                        <div class="contact-block__timetable ">
                             <table>
                                 <tr>
                                     <td>пн.-пт.</td>
@@ -298,7 +298,7 @@
                 <div class="col-lg-7 col-md-12 no-padding">
                     <div class="price-block-info__item">
                         <p>Стоимость за тур на 1 человека в евро</p>
-                        <div>
+                        <div class="table-responsive">
                             <table>
                                 <thead>
                                     <tr>
@@ -327,13 +327,17 @@
                     </div>
                     <div class="price-block-info__item">
                         <p>В стоимость входит</p>
-                        <div class="tag-box">
-                            <span class="tag">Отель</span><span class="tag">Лучшие гиды</span><span class="tag">7 экскурсий</span>
-                            <span class="tag">Обед у горы Крестов</span><span class="tag">Дегустация кибинов в Тракае</span> <span class="tag">Трансферы: Вильнюс - Гора Крестов - Рундале - Рига, Рига - Юрмала - Таллинн</span>
-                        </div>
+                        <ul class="tag-box">
+                            <li class="tag">Отель</li>
+                            <li class="tag">Лучшие гиды</li>
+                            <li class="tag">7 экскурсий</li>
+                            <li class="tag">Обед у горы Крестов</li>
+                            <li class="tag">Дегустация кибинов в Тракае</li>
+                            <li class="tag">Трансферы: Вильнюс - Гора Крестов - Рундале - Рига, Рига - Юрмала - Таллинн</li>
+                        </ul>
                     </div>
                     <div class="price-block-info__item">
-                        <div class="alert alert-danger">
+                        <div class="alert alert-warning">
                             <p>Дополнительно оплачивается</p>
                             <ul>
                                 <li>Проезд в Вильнюс и обратно из Таллинна</li>
@@ -348,7 +352,7 @@
     </div>
 
     <div class="list-tour-box">
-        <div class="container">
+        <div class="container container--custom">
             <p class="sub-title sub-title-small">Маршрут программы тура</p>
             <div class="row justify-content-between">
                 <div class="col-lg-6 col-md-12 no-padding">
@@ -826,7 +830,16 @@
             asNavFor: '.slider-for',
             dots: false,
             arrows: false,
-            focusOnSelect: true
+            focusOnSelect: true,
+            responsive: [
+            {
+            breakpoint: 468,
+            settings: {
+                vertical: false,
+                slidesToShow: 4
+            }
+            }
+        ]
         });
         // Cache selectors
         var lastId,

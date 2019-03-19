@@ -1044,6 +1044,11 @@ img.badge {
   display: flex;
   width: 100%;
   max-width: 100%; }
+  @media (max-width: 468px) {
+    .gallery {
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
 
 .slider-nav {
   -webkit-box-flex: 0;
@@ -1054,11 +1059,28 @@ img.badge {
   .slider-nav .slider-nav__slides {
     height: 62px;
     margin-bottom: 6px; }
+    @media (max-width: 468px) {
+      .slider-nav .slider-nav__slides {
+        height: auto;
+        padding: 0 .6rem;
+        margin-bottom: 0; } }
+  @media (max-width: 468px) {
+    .slider-nav {
+      width: 100%; } }
 
 .slider-for {
   width: -webkit-calc(100% - 78px);
   width: calc(100% - 78px);
   padding: 0 1.2rem; }
+  @media (max-width: 468px) {
+    .slider-for {
+      width: 100%;
+      padding: 0;
+      -webkit-box-ordinal-group: 0;
+      -webkit-order: -1;
+          -ms-flex-order: -1;
+              order: -1;
+      margin-bottom: .6rem; } }
 
 .slider-nav img,
 .slider-for img {
@@ -1096,6 +1118,10 @@ img.badge {
   font-weight: 400;
   line-height: 1.57;
   color: #4e4e4e; }
+  @media (max-width: 468px) {
+    .text-info-box {
+      -webkit-mask-image: -webkit-linear-gradient(top, #000 -webkit-calc(100% - 200px), transparent);
+      mask-image: linear-gradient(top, #000 calc(100% - 200px), transparent); } }
   .text-info-box p + p {
     margin-top: 1.5rem; }
 
@@ -1174,9 +1200,18 @@ img.badge {
   border: solid 1px #d8d8d8;
   margin-right: 1.2rem;
   margin-top: 1.2rem; }
+  @media (max-width: 468px) {
+    .tag {
+      display: list-item;
+      border: none;
+      margin: 0;
+      padding: 0; } }
 
 .alert {
   padding: 3.2rem; }
+  .alert-warning {
+    background-color: #fff0d7;
+    border-color: #fff0d7; }
   .alert p {
     font-size: 1.8rem;
     font-weight: bold;
@@ -1186,6 +1221,9 @@ img.badge {
   padding-bottom: 2.3rem;
   border-bottom: 1px solid #d8d8d8;
   margin-top: 4.8rem; }
+  @media (max-width: 468px) {
+    .list-tour__item {
+      margin-top: 2.3rem; } }
 
 .accordion__head {
   font-size: 1.8rem;
@@ -1242,9 +1280,9 @@ img.badge {
   #in-sticky li a {
     color: inherit; }
   #in-sticky li:hover, #in-sticky li.active {
-    color: #fff;
+    color: #ffffff;
     border-color: #e36231;
-    background-color: #9c401c; }
+    background-color: #e36231; }
 
 .day-price {
   font-size: 2.4rem;
