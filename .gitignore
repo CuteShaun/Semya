@@ -1,2 +1,4 @@
 node_modules
 templates
+css/styles.css
+css/styles.min.css
