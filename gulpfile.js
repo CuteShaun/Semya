@@ -92,7 +92,7 @@ gulp.task('watch', ['browser-sync'], function () {
     gulp.watch('./js/.*js', ['babel'], browserSync.reload);
     gulp.watch('./html/**/*.html', ['html']);
     gulp.watch('./js/*.js', browserSync.reload);
-    gulp.watch('./css/*.css', ['cssmin']);
+    gulp.watch('./css/styles.css', ['cssmin']);
     gulp.watch('./css/styles.min.css', browserSync.reload);
     gulp.watch('./css/styles.min.css', ['critical']);
 });
