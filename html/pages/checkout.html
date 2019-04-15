@@ -30,14 +30,19 @@
             <div class="row mx-0">
               <div class="col-md-8 px-0 content-parent">
                 <section class="user-form__section user-form__info">
-                  <div class="user-form__content">
+                  <div class="checkout__title-wrapper">
                     <h4 class="checkout__title">
                       Информация о путешественниках
                     </h4>
 
+                    <button class="edit" type="button">
+                      <span>Редактировать</span>
+                    </button>
+                  </div>
+                  <div class="user-form__content user-form__content--0">
                     <div class="custom-select__wrapper mb-10">
                       <select name="" id="quantity" class="custom-select">
-                        <option value="" disabled selected>Взрослых</option>
+                        <option value="" disabled>Взрослых</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -48,9 +53,8 @@
                     </div>
                     <div class="custom-select__wrapper mb-10">
                       <select name="" id="childrens" class="custom-select">
-                        <option value="" disabled selected
-                          >Детей до 12 лет</option
-                        >
+                        <option value="" disabled>Детей до 12 лет</option>
+                        <option value="">Без детей</option>
                         <option value="">1</option>
                         <option value="">2</option>
                         <option value="">3</option>
@@ -62,6 +66,7 @@
 
                     <div class="custom-select__wrapper">
                       <select name="" id="tour-date" class="custom-select">
+                        <option value="" disabled>Дата тура</option>
                         <option value="" selected>25.12.2018 - 28.12</option>
                         <option value="">10.01.2019 - 13.01</option>
                       </select>
@@ -73,10 +78,29 @@
                       </button>
                     </div>
                   </div>
+
+                  <div
+                    class="user-form__filled-content user-form__filled-content--0"
+                  >
+                    <!-- <div class="user-form__filled-content-item adults">
+                      <span class="filled-title adults__title">Взрослых</span>
+                      <span class="filled-value adults__value"></span>
+                    </div>
+                    <div class="user-form__filled-content-item childs">
+                      <span class="filled-title childs__title"
+                        >Детей до 12 лет</span
+                      >
+                      <span class="filled-value childs__value"></span>
+                    </div>
+                    <div class="user-form__filled-content-item date">
+                      <span class="filled-title date__title">Дата выезда</span>
+                      <span class="filled-value date__value"></span>
+                    </div> -->
+                  </div>
                 </section>
 
                 <section class="user-form__section user-form__hotel">
-                  <div class="user-form__content user-form__content--border">
+                  <div class="checkout__title-wrapper">
                     <h4 class="checkout__title">
                       Размещение в гостинице
 
@@ -85,18 +109,30 @@
                       </span>
                     </h4>
 
+                    <button class="edit" type="button">
+                      <span>Редактировать</span>
+                    </button>
+                  </div>
+                  <div
+                    class="user-form__content  user-form__content--1 disabled"
+                    id="user-content-2"
+                    ;
+                  >
                     <div
                       class="custom-select__wrapper custom-select__wrapper--info mb-10"
                     >
                       <select
                         name=""
                         id="rooms-quantity"
-                        class="custom-select custom-select--info"
+                        class="change-select custom-select custom-select--info"
                       >
-                        <option value="" selected>1 номер</option>
-                        <option value="">2 номера</option>
-                        <option value="">3 номера</option>
-                        <option value="">4 номера</option>
+                        <option class="bed-type" value="single" disabled
+                          >Номеров</option
+                        >
+                        <option value="1" selected>1 номер</option>
+                        <option value="2">2 номера</option>
+                        <option value="3">3 номера</option>
+                        <option value="4">4 номера</option>
                       </select>
 
                       <span
@@ -105,120 +141,37 @@
                         Для более чем 4 человек - минимальный заказ 2 номера
                       </span>
                     </div>
-                    <div class="custom-select__wrapper mb-10">
+                    <div
+                      class="custom-select__wrapper mb-10"
+                      id="room-type-wrapper"
+                    >
                       <select
                         name=""
                         id="room-type-1"
-                        class="custom-select custom-select--info"
+                        class="type-select change-select custom-select custom-select--info"
                       >
-                        <option value="" selected
+                        <option class="bed-type" value="single" disabled
+                          >Тип номера</option
+                        >
+                        <option class="bed-type" value="single" selected
                           >Одноместный номер с двухспальной кроватью</option
                         >
-                        <option value=""
+                        <option class="bed-type" value="second-share"
                           >Двухместный номер с общей кроватью</option
                         >
-                        <option value=""
+                        <option class="bed-type" value="second-separate"
                           >Двухместный номер с раздельной кроватью</option
                         >
                       </select>
-
-                      <span
-                        class="checkout__add-info checkout__add-info--after-border"
-                      >
-                        Турист, заказавший одно место в многодневном
-                        путешествии, оплачивает одноместный номер. По
-                        возможности фирма попытается найти пару в отеле, но
-                        гарантий не дает.
-                      </span>
                     </div>
-                  </div>
 
-                  <div class="user-form__content user-form__content--padding">
-                    <div class="traveler-info">
-                      <h5 class="traveler-info__title">
-                        1) Одноместный номер с двухспальной кроватью
-                      </h5>
-
-                      <div class="traveler-info__item">
-                        <h5 class="traveler-info__inner-title">
-                          Путешественник 1 (Взрослый)
-                        </h5>
-
-                        <div class="custom-select__wrapper">
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Имя"
-                            required
-                          />
-                        </div>
-
-                        <div class="custom-select__wrapper">
-                          <input
-                            class="form-control"
-                            type="text"
-                            placeholder="Фамилия"
-                            required
-                          />
-                        </div>
-
-                        <select
-                          name=""
-                          id="room-type-1"
-                          class="custom-select custom-select--info"
-                        >
-                          <option value="" selected disabled>Пол</option>
-                          <option value="">Мужской</option>
-                          <option value="">Женский</option>
-                        </select>
-
-                        <select
-                          name=""
-                          id="room-type-1"
-                          class="custom-select custom-select--info"
-                        >
-                          <option value="" selected disabled
-                            >Город отправления</option
-                          >
-                          <option value="">Одесса</option>
-                        </select>
-
-                        <div
-                          class="custom-select__wrapper custom-select__wrapper--checkbox"
-                        >
-                          <input
-                            class="checkout__checkbox form-check-input"
-                            type="checkbox"
-                            id="first-class"
-                            placeholder="Фамилия"
-                            required
-                          />
-                          <label
-                            class="checkout__checkbox-label"
-                            for="first-class"
-                          >
-                            Место 1 класса - 15.00 €
-                          </label>
-                        </div>
-                        <div
-                          class="custom-select__wrapper custom-select__wrapper--checkbox"
-                        >
-                          <input
-                            class="checkout__checkbox form-check-input"
-                            type="checkbox"
-                            placeholder="Фамилия"
-                            id="second-class"
-                            required
-                          />
-                          <label
-                            class="checkout__checkbox-label"
-                            for="second-class"
-                          >
-                            Место 2 класса - 10.00 €
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+                    <span
+                      class="checkout__add-info checkout__add-info--after-border"
+                    >
+                      Турист, заказавший одно место в многодневном путешествии,
+                      оплачивает одноместный номер. По возможности фирма
+                      попытается найти пару в отеле, но гарантий не дает.
+                    </span>
 
                     <div class="user-form__button-box">
                       <button type="button" class="user-button" id="user-btn">
@@ -226,54 +179,69 @@
                       </button>
                     </div>
                   </div>
+
+                  <div
+                    class="user-form__filled-content user-form__filled-content--1"
+                  ></div>
                 </section>
 
                 <section
                   class="user-form__section user-form__reponsible-person"
                 >
-                  <div class="user-form__content">
+                  <div class="checkout__title-wrapper">
                     <h4 class="checkout__title">
                       Заказчик тура
                     </h4>
 
+                    <button
+                      class="
+                    edit"
+                      type="button"
+                    >
+                      <span> Редактировать</span>
+                    </button>
+                  </div>
+                  <div
+                    class="user-form__content user-form__content--2 disabled"
+                  >
                     <div class="custom-select__wrapper">
                       <input
-                        class="form-control"
+                        class="form-control order-input"
                         type="text"
                         placeholder="Имя"
-                        id="second-class"
-                        required
+                        id="order-name"
+                        name="Имя"
                       />
                     </div>
 
                     <div class="custom-select__wrapper">
                       <input
-                        class="form-control"
+                        class="form-control order-input"
                         type="text"
                         placeholder="Фамилия"
-                        id="second-class"
-                        required
+                        id="order-surname"
+                        name="Фамилия"
                       />
                     </div>
 
                     <div class="custom-select__wrapper">
                       <input
-                        class="form-control"
+                        class="form-control order-input"
                         type="email"
                         placeholder="Электронная почта"
-                        id="second-class"
-                        required
+                        id="order-email"
+                        name="Электронная почта"
                       />
                     </div>
 
                     <div class="custom-select__wrapper">
                       <input
-                        class="form-control"
+                        class="form-control order-input"
                         type="text"
                         inputmode="numeric"
                         placeholder="Контактный номер телефона  "
-                        id="second-class"
-                        required
+                        id="order-tel"
+                        name="Телефон"
                       />
                     </div>
 
@@ -283,14 +251,25 @@
                       </button>
                     </div>
                   </div>
+
+                  <div
+                    class="user-form__filled-content user-form__filled-content--2"
+                  >
+                  
+                  </div>
                 </section>
 
-                <section class="user-form__section">
-                  <div class="user-form__content">
+                <!-- <section class="user-form__section">
+                  <div class="checkout__title-wrapper">
                     <h4 class="checkout__title">
                       Способ оплаты
                     </h4>
 
+                    <button class="edit" type="button">
+                      <span>Редактировать</span>
+                    </button>
+                  </div>
+                  <div class="user-form__content">
                     <div class="radio-group">
                       <div
                         class="custom-select__wrapper custom-select__wrapper--checkbox"
@@ -357,6 +336,7 @@
                         <div class="custom-select__wrapper">
                           <input
                             class="form-control"
+                            name="card-date"
                             type="text"
                             inputmode="numeric"
                             placeholder="03/2021"
@@ -369,6 +349,7 @@
                           <input
                             class="form-control ccv"
                             type="text"
+                            name="card-code"
                             inputmode="numeric"
                             placeholder="CCV"
                             id="card-code"
@@ -377,16 +358,18 @@
                             maxlength="4"
                           />
                         </div>
-                      </div>
+                      </div> -->
 
-                      <div class="user-form__button-box">
-                        <button type="button" class="user-button" id="user-btn">
-                          Продолжить
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </section>
+                <div
+                  class="user-form__button-box user-form__button-box--submit"
+                >
+                  <button type="submit" class="user-button disabled submit" id="submit-btn">
+                    Отправить заявку
+                  </button>
+                </div>
+                <!-- </div>
+                  </div> -->
+                <!-- </section> -->
               </div>
 
               <div class="col-md-4 px-0 order-aside-parent">
@@ -430,13 +413,16 @@
             </div>
           </form>
 
-          <div class="safety-text">
+          <!-- <div class="safety-text">
             Все ваши данные защищены и третьим лицам не передаются.
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
 
     @@include('../templates/footer.html')
+
+    <!-- <script src="/js/markUp.js"></script> -->
+    <script src="/js/formHandler.js" type="module"></script>
   </body>
 </html>
