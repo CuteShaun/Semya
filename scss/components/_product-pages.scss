@@ -163,6 +163,12 @@
 }
 
 // tag box 
+.tag-box {
+    @media(max-width: 991px) {
+        list-style-position: inside;
+    }
+}
+
 .tag {
     display: inline-block;
     font-size: 1.4rem;
