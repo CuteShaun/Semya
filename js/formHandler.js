@@ -21,6 +21,9 @@ const inputId = [
 ];
 
 window.onload = () => {
+  const room = document.getElementById("rooms-quantity");
+  const roomContainer = document.getElementById("room-type-wrapper");
+  const roomType = document.querySelector(".type-select");
   const btns = [...document.querySelectorAll(".user-button")];
   const selects = [...document.querySelectorAll(".custom-select")];
   const inputs = [...document.querySelectorAll(".form-control")];
@@ -100,10 +103,6 @@ window.onload = () => {
     return bool;
   }
 
-  function showSuccess(input) {
-    console.log("Огонь");
-  }
-
   function allowNextStep(arr) {
     let boolArr = [];
 
@@ -138,7 +137,15 @@ window.onload = () => {
   }
 
   function showError(input) {
-    console.log("Так не пойдёт");
+    input.nextSibling.nextSibling.classList.add('active');
+    input.nextSibling.nextSibling.nextSibling.nextSibling.classList.remove('active');
+
+  }
+
+  
+  function showSuccess(input) {
+    input.nextSibling.nextSibling.classList.remove('active');
+    input.nextSibling.nextSibling.nextSibling.nextSibling.classList.add('active');
   }
 
   function getFirstOption(select) {
@@ -192,8 +199,39 @@ window.onload = () => {
   }
 
   function getSelectValue(select) {
-    let value = select.options[select.selectedIndex].textContent;
-    return value;
+    let selectText = select.options[select.selectedIndex].textContent;
+    select.options[select.selectedIndex].value = selectText;
+
+    return selectText;
+  }
+
+  function addNewRoomSelects() {
+    let value = getSelectValue(room);
+    let host = document.createDocumentFragment();
+    let newArr = [];
+
+    for (let i = 0; i < +value[0]; i++) {
+      let clone = roomType.cloneNode(true);
+      clone.id = `room-type-${i}`;
+      newArr.push(clone);
+    }
+
+    newArr.forEach(item => {
+      host.appendChild(item);
+    });
+
+    roomContainer.innerHTML = "";
+    roomContainer.appendChild(host);
+
+    const roomTypeCollection = [...document.querySelectorAll(".type-select")];
+    roomTypeCollection.forEach(item => {
+      item.addEventListener("change", addValueToNewSelects);
+    });
+  }
+
+  function addValueToNewSelects(e) {
+    let selectText = e.target.options[e.target.selectedIndex].textContent;
+    e.target.options[e.target.selectedIndex].value = selectText;
   }
 
   function formHandler(event, index) {
@@ -251,11 +289,13 @@ window.onload = () => {
     btn.addEventListener("click", event => formHandler(event, index));
   });
 
-  selects.forEach((select, index) => {
+  selects.forEach((select) => {
     select.addEventListener("change", getSelectsValues);
   });
 
-  inputs.forEach((input, index) => {
-    input.addEventListener("change", getInputValues);
+  inputs.forEach((input) => {
+    input.addEventListener("input", getInputValues);
   });
+
+  room.addEventListener("change", addNewRoomSelects);
 };
