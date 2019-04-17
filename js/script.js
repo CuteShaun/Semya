@@ -141,4 +141,4 @@ function closeMenu() {
     overlay.classList.remove("overlay--active");
 }
 
-changeControlHeight();
+// changeControlHeight();

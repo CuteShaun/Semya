@@ -1,409 +1,600 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
+  <head>
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous" />
-        <link href="../css/styles.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic" rel="stylesheet" />
-        <title>Бюро путешествий семья</title>
+      <meta charset="UTF-8" />
+      <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous"
+      />
+      <link href="../css/styles.min.css" rel="stylesheet" />
+      <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
+        rel="stylesheet"
+      />
+      <title>Бюро путешествий семья</title>
     </head>
-</head>
+  </head>
 
-<body>
+  <body>
     @@include('../templates/header.html')
     <div>
-        <div class="container container--custom no-padding">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Главная</a></li>
-                    <li class="breadcrumb-item"><a href="#">Туры по Европе</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Вся прибалтика</li>
-                </ol>
-            </nav>
-            <p class="sub-title">Вся прибалтика. Рождетсво</p>
-        </div>
+      <div class="container container--custom no-padding">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Главная</a></li>
+            <li class="breadcrumb-item"><a href="#">Туры по Европе</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Вся прибалтика
+            </li>
+          </ol>
+        </nav>
+        <p class="sub-title">Вся прибалтика. Рождетсво</p>
+      </div>
     </div>
 
     <div class="pt-5 pb-5 border-b">
-        <div class="container container--custom">
-            <div class="row justify-content-between">
-                <div class="col-lg-7 col-md-7 no-padding">
-                    <div class="gallery">
-                        <div class="slider-nav">
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                        </div>
-                        <div class="slider-for">
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                            <div class="slider-nav__slides"><img src="/img/englischer-garten.png" /></div>
-                        </div>
-                    </div>
-                    <article class="text-info-box mt-5">
-                        <h4 class="heading-secondary">Описание</h4>
-                        <p>Мюнхен - Афины на Изаре, красивейший город Германии, веселая столица Баварии, пивного рая и автозвезды "BMW". Современный девиз города: "Мюнхен любит Вас!" Ох, и не зря же ведь здесь живут самые счастливые люди Германии!</p>
-                        <p>...Он был романтиком, ему не нравился суетный мир, и он создал свой - сказочный, „абсолютно королевский“. Высоко на холмах, среди грозного безмолвия ущелий строил он сказочные дворцы. В его „горном одиночестве“ жили призраки античных
-                            Богов, и звучали лишь струи фонтанов под музыку Вагнера.</p>
-                        <p>Посетите замки Людвига Баварского - Вы будете потрясены!</p>
-                    </article>
+      <div class="container container--custom">
+        <div class="row justify-content-between">
+          <div class="col-lg-7 col-md-7 no-padding">
+            <div class="gallery">
+              <div class="slider-nav">
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
                 </div>
-                <div class="col-lg-4 col-md-4 no-padding">
-                    <p class="day-price">7дней/6 ночей от ... <span>59.99 €</span></p>
-                    <div class="form-group mt-5 mb-5">
-                        <select name="" id="" class="form-control">
-                            <option value="" selected>Выберите город и дату</option>
-                            <option value=""></option>
-                        </select>
-                    </div>
-                    <div class="flex flex-column"><a href="#" class="orange-button w-100 text-center">Забронировать тур</a></div>
-                    <p>Необходимые документы: <b>Заграничный паспорт</b></p>
-                    <div class="btn-list">
-                        <button type="button">Маршрут <span>></span></button>
-                        <button type="button" class="btn-rewiews">Отзывы (2) <span>></span></button>
-                    </div>
-                    <div class="contact-block mt-5">
-                        <div class="contact-block__number">
-                            <p>Звоните:</p>
-                            <a href="tel:+4921197633942">+49 211 976 33 942</a>
-                        </div>
-                        <div class="contact-block__timetable">
-                            <table>
-                                <tr>
-                                    <td>пн.-пт.</td>
-                                    <td>09:00 - 18:00</td>
-                                </tr>
-                                <tr>
-                                    <td>сб.</td>
-                                    <td>09:00 - 14:00</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-                    <p>Обратитесь к нашим специалистам, чтобы воплотить ваши мечты в реальность</p>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
                 </div>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+              </div>
+              <div class="slider-for">
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+                <div class="slider-nav__slides">
+                  <img src="/img/englischer-garten.png" />
+                </div>
+              </div>
             </div>
+            <article class="text-info-box mt-5">
+              <h4 class="heading-secondary">Описание</h4>
+              <p>
+                Мюнхен - Афины на Изаре, красивейший город Германии, веселая
+                столица Баварии, пивного рая и автозвезды "BMW". Современный
+                девиз города: "Мюнхен любит Вас!" Ох, и не зря же ведь здесь
+                живут самые счастливые люди Германии!
+              </p>
+              <p>
+                ...Он был романтиком, ему не нравился суетный мир, и он создал
+                свой - сказочный, „абсолютно королевский“. Высоко на холмах,
+                среди грозного безмолвия ущелий строил он сказочные дворцы. В
+                его „горном одиночестве“ жили призраки античных Богов, и звучали
+                лишь струи фонтанов под музыку Вагнера.
+              </p>
+              <p>Посетите замки Людвига Баварского - Вы будете потрясены!</p>
+            </article>
+          </div>
+          <div class="col-lg-4 col-md-4 no-padding">
+            <p class="day-price">7дней/6 ночей от ... <span>59.99 €</span></p>
+            <div class="form-group mt-5 mb-5">
+              <select name="" id="" class="form-control">
+                <option value="" selected>Выберите город и дату</option>
+                <option value=""></option>
+              </select>
+            </div>
+            <div class="flex flex-column">
+              <a href="#" class="orange-button w-100 text-center"
+                >Забронировать тур</a
+              >
+            </div>
+            <p>Необходимые документы: <b>Заграничный паспорт</b></p>
+            <div class="btn-list">
+              <button type="button">Маршрут <span>></span></button>
+              <button type="button" class="btn-rewiews">
+                Отзывы (2) <span>></span>
+              </button>
+            </div>
+            <div class="contact-block mt-5">
+              <div class="contact-block__number">
+                <p>Звоните:</p>
+                <a href="tel:+4921197633942">+49 211 976 33 942</a>
+              </div>
+              <div class="contact-block__timetable">
+                <table>
+                  <tr>
+                    <td>пн.-пт.</td>
+                    <td>09:00 - 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>сб.</td>
+                    <td>09:00 - 14:00</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+            <p>
+              Обратитесь к нашим специалистам, чтобы воплотить ваши мечты в
+              реальность
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <div class="price-block-info mt-5">
-        <div class="container container--custom">
-            <div class="row">
-                <div class="col-lg-7 col-md-12 no-padding">
-                    <div class="price-block-info__item">
-                        <p>Стоимость за тур на 1 человека в евро</p>
-                        <div>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Отели</th>
-                                        <th>2 местный номер</th>
-                                        <th>1 местный номер</th>
-                                        <th>Доп.место</th>
-                                        <th>Город отправления</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>Panorama 3*, Vilnius / Ibis Riga 3*, Riga / Metropol 3*, Tallinn</td>
-                                        <td>374</td>
-                                        <td>524</td>
-                                        <td>392</td>
-                                        <td>Одесса</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Conti 4*, Vilnius / Tallink Riga, Riga / Sokos Viru 4*, Tallinn</td>
-                                        <td>450</td>
-                                        <td>657</td>
-                                        <td>422</td>
-                                        <td>Одесса</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <div class="price-block-info__item">
-                        <p>В стоимость входит</p>
-                        <div class="tag-box">
-                            <span class="tag">Отель</span><span class="tag">Лучшие гиды</span><span class="tag">7 экскурсий</span>
-                            <span class="tag">Обед у горы Крестов</span><span class="tag">Дегустация кибинов в Тракае</span> <span class="tag">Трансферы: Вильнюс - Гора Крестов - Рундале - Рига, Рига - Юрмала - Таллинн</span>
-                        </div>
-                    </div>
-                    <div class="price-block-info__item">
-                        <div class="alert alert-danger">
-                            <p>Дополнительно оплачивается</p>
-                            <ul>
-                                <li>Проезд в Вильнюс и обратно из Таллинна</li>
-                                <li>Консульский сбор (если паспорт не биометрический)</li>
-                                <li>Страховка</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <div class="container container--custom">
+        <div class="row">
+          <div class="col-lg-7 col-md-12 no-padding">
+            <div class="price-block-info__item">
+              <p>Стоимость за тур на 1 человека в евро</p>
+              <div>
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Отели</th>
+                      <th>2 местный номер</th>
+                      <th>1 местный номер</th>
+                      <th>Доп.место</th>
+                      <th>Город отправления</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        Panorama 3*, Vilnius / Ibis Riga 3*, Riga / Metropol 3*,
+                        Tallinn
+                      </td>
+                      <td>374</td>
+                      <td>524</td>
+                      <td>392</td>
+                      <td>Одесса</td>
+                    </tr>
+                    <tr>
+                      <td>
+                        Conti 4*, Vilnius / Tallink Riga, Riga / Sokos Viru 4*,
+                        Tallinn
+                      </td>
+                      <td>450</td>
+                      <td>657</td>
+                      <td>422</td>
+                      <td>Одесса</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
+            <div class="price-block-info__item">
+              <p>В стоимость входит</p>
+              <div class="tag-box">
+                <span class="tag">Отель</span
+                ><span class="tag">Лучшие гиды</span
+                ><span class="tag">7 экскурсий</span>
+                <span class="tag">Обед у горы Крестов</span
+                ><span class="tag">Дегустация кибинов в Тракае</span>
+                <span class="tag"
+                  >Трансферы: Вильнюс - Гора Крестов - Рундале - Рига, Рига -
+                  Юрмала - Таллинн</span
+                >
+              </div>
+            </div>
+            <div class="price-block-info__item">
+              <div class="alert alert-danger">
+                <p>Дополнительно оплачивается</p>
+                <ul>
+                  <li>Проезд в Вильнюс и обратно из Таллинна</li>
+                  <li>Консульский сбор (если паспорт не биометрический)</li>
+                  <li>Страховка</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <div class="list-tour-box">
-        <div class="container">
-            <p class="sub-title sub-title-small">Маршрут программы тура</p>
-            <div class="row justify-content-between">
-                <div class="col-lg-6 col-md-12 no-padding">
-                    <div class="list-tour">
-                        <div class="list-tour__item" id="day-1">
-                            <div class="accordion">
-                                <div class="accordion__head">1-й день - 02.01.2019 - Вильнос</div>
-                                <div class="accordion__body">Прибытие. Размещение в отеле. Пешеходная экскурсия по Старому Вильнюсу - крупнейшему архитектурному комплексу старого города Восточной Европы. ДОПОЛНИТЕЛЬНО: 16:00 «Тайны и сокровища Кафедрального собора»</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-2">
-                            <div class="accordion">
-                                <div class="accordion__head">2-й день - 03.01.2019 - Вильнюс - Тракай</div>
-                                <div class="accordion__body">Завтрак. Экскурсия в древнюю столицу Литвы - Тракай, главная достопримечательность которого - живописный Тракайский замок, расположенный на острове в центре озера Гальве. Дегустация традиционного для Тракая блюда - караимских
-                                    кибинов с бульоном в ресторане Тракай.</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-3">
-                            <div class="accordion">
-                                <div class="accordion__head">3-й день - 04.01.2019 - Вильнюс - Гора Крестов - Рундальский дворец - Рига</div>
-                                <div class="accordion__body">Завтрак. Отъезд в Ригу. Остановка и экскурсия по Горе Крестов - единственному в своем роде святому месту, вмещающему более 100 000 крестов, принесенных сюда людьми различных вероисповеданий. Обед у Горы Крестов. Остановка
-                                    с экскурсией в Рундальском дворцово-парковом ансамбле - выдающемся памятнике барокко и рококо, шедевре знаменитого Ф. Растрелли. Прибытие в Ригу. Размещение в отеле Риги.</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-4">
-                            <div class="accordion">
-                                <div class="accordion__head">4-й день - 05.01.2019 - Рига</div>
-                                <div class="accordion__body">Завтрак. Пешеходная экскурсия по Старой Риге. Утренняя экскурсия по Старому городу, прекрасному архитектурному ансамблю, насчитывающему 800-летнюю историю, знакомство с гордостью Риги - причудливо украшенными зданиями в
-                                    стиле югенд.</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-5">
-                            <div class="accordion">
-                                <div class="accordion__head">5-й день - 06.01.2019 - Рига - Юрмала - Таллинн</div>
-                                <div class="accordion__body">Завтрак в отеле. Выезд в Таллинн. По пути остановка и экскурсия в Юрмале - известнейшем курорте Прибалтики. Знакомство с уникальной архитектурой города - изящно декорированными деревянными усадьбами в стиле югенд, благодаря
-                                    которой Юрмала вошла в фонд мирового культурного наследия ЮНЕСКО. Посещение LIDO. Прибытие в Таллинн. Размещение в отеле Таллинна, центр города.</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-6">
-                            <div class="accordion">
-                                <div class="accordion__head">6-й день - 07.01.2019 - Таллинн</div>
-                                <div class="accordion__body">Завтрак в отеле. Пешеходная экскурсия по Старому городу. Очаровательное соседство многовековых улиц, домов, башен и площадей, которые смотрятся так, словно сошли со страниц сборника сказок. И тут же яркие современные магазины,
-                                    стильные интерьеры хай-тек, которые идут со средневековым городом рука об руку.</div>
-                            </div>
-                        </div>
-                        <div class="list-tour__item" id="day-7">
-                            <div class="accordion">
-                                <div class="accordion__head">7-й день - 08.01.2019 - Таллинн</div>
-                                <div class="accordion__body">Завтрак. Свободное время в городе. Отъезд домой. При желании пребывание в Таллинне можно продлить.</div>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <p class="sub-title sub-title-small">Маршрут программы тура</p>
+        <div class="row justify-content-between">
+          <div class="col-lg-6 col-md-12 no-padding">
+            <div class="list-tour">
+              <div class="list-tour__item" id="day-1">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    1-й день - 02.01.2019 - Вильнос
+                  </div>
+                  <div class="accordion__body">
+                    Прибытие. Размещение в отеле. Пешеходная экскурсия по
+                    Старому Вильнюсу - крупнейшему архитектурному комплексу
+                    старого города Восточной Европы. ДОПОЛНИТЕЛЬНО: 16:00 «Тайны
+                    и сокровища Кафедрального собора»
+                  </div>
                 </div>
-                <div class="col-lg-4 col-md-4 in-sticky">
-                    <ul id="in-sticky">
-                        <li class="active">
-                            <a href="#day-1">День 1</a>
-                        </li>
-                        <li>
-                            <a href="#day-2">День 2</a>
-                        </li>
-                        <li>
-                            <a href="#day-3">День 3</a>
-                        </li>
-                        <li>
-                            <a href="#day-4">День 4</a>
-                        </li>
-                        <li>
-                            <a href="#day-5">День 5</a>
-                        </li>
-                        <li>
-                            <a href="#day-6">День 6</a>
-                        </li>
-                        <li>
-                            <a href="#day-7">День 7</a>
-                        </li>
-                    </ul>
+              </div>
+              <div class="list-tour__item" id="day-2">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    2-й день - 03.01.2019 - Вильнюс - Тракай
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак. Экскурсия в древнюю столицу Литвы - Тракай, главная
+                    достопримечательность которого - живописный Тракайский
+                    замок, расположенный на острове в центре озера Гальве.
+                    Дегустация традиционного для Тракая блюда - караимских
+                    кибинов с бульоном в ресторане Тракай.
+                  </div>
                 </div>
+              </div>
+              <div class="list-tour__item" id="day-3">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    3-й день - 04.01.2019 - Вильнюс - Гора Крестов - Рундальский
+                    дворец - Рига
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак. Отъезд в Ригу. Остановка и экскурсия по Горе
+                    Крестов - единственному в своем роде святому месту,
+                    вмещающему более 100 000 крестов, принесенных сюда людьми
+                    различных вероисповеданий. Обед у Горы Крестов. Остановка с
+                    экскурсией в Рундальском дворцово-парковом ансамбле -
+                    выдающемся памятнике барокко и рококо, шедевре знаменитого
+                    Ф. Растрелли. Прибытие в Ригу. Размещение в отеле Риги.
+                  </div>
+                </div>
+              </div>
+              <div class="list-tour__item" id="day-4">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    4-й день - 05.01.2019 - Рига
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак. Пешеходная экскурсия по Старой Риге. Утренняя
+                    экскурсия по Старому городу, прекрасному архитектурному
+                    ансамблю, насчитывающему 800-летнюю историю, знакомство с
+                    гордостью Риги - причудливо украшенными зданиями в стиле
+                    югенд.
+                  </div>
+                </div>
+              </div>
+              <div class="list-tour__item" id="day-5">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    5-й день - 06.01.2019 - Рига - Юрмала - Таллинн
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак в отеле. Выезд в Таллинн. По пути остановка и
+                    экскурсия в Юрмале - известнейшем курорте Прибалтики.
+                    Знакомство с уникальной архитектурой города - изящно
+                    декорированными деревянными усадьбами в стиле югенд,
+                    благодаря которой Юрмала вошла в фонд мирового культурного
+                    наследия ЮНЕСКО. Посещение LIDO. Прибытие в Таллинн.
+                    Размещение в отеле Таллинна, центр города.
+                  </div>
+                </div>
+              </div>
+              <div class="list-tour__item" id="day-6">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    6-й день - 07.01.2019 - Таллинн
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак в отеле. Пешеходная экскурсия по Старому городу.
+                    Очаровательное соседство многовековых улиц, домов, башен и
+                    площадей, которые смотрятся так, словно сошли со страниц
+                    сборника сказок. И тут же яркие современные магазины,
+                    стильные интерьеры хай-тек, которые идут со средневековым
+                    городом рука об руку.
+                  </div>
+                </div>
+              </div>
+              <div class="list-tour__item" id="day-7">
+                <div class="accordion">
+                  <div class="accordion__head">
+                    7-й день - 08.01.2019 - Таллинн
+                  </div>
+                  <div class="accordion__body">
+                    Завтрак. Свободное время в городе. Отъезд домой. При желании
+                    пребывание в Таллинне можно продлить.
+                  </div>
+                </div>
+              </div>
             </div>
-
+          </div>
+          <div class="col-lg-4 col-md-4 in-sticky">
+            <ul id="in-sticky">
+              <li class="active">
+                <a href="#day-1">День 1</a>
+              </li>
+              <li>
+                <a href="#day-2">День 2</a>
+              </li>
+              <li>
+                <a href="#day-3">День 3</a>
+              </li>
+              <li>
+                <a href="#day-4">День 4</a>
+              </li>
+              <li>
+                <a href="#day-5">День 5</a>
+              </li>
+              <li>
+                <a href="#day-6">День 6</a>
+              </li>
+              <li>
+                <a href="#day-7">День 7</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </div>
-    <div>
-
-    </div>
+    <div></div>
     <section class="section subscribe">
-        <div class="container container--custom">
-            <div class="row">
-                <h5 class="subscribe__text col-12">Подпишитесь на рассылку и</h5>
-                <h4 class="subscribe__title col-12 heading-main">
-                    Будьте в курсе интересных предложений!
-                </h4>
-            </div>
+      <div class="container container--custom">
+        <div class="row">
+          <h5 class="subscribe__text col-12">Подпишитесь на рассылку и</h5>
+          <h4 class="subscribe__title col-12 heading-main">
+            Будьте в курсе интересных предложений!
+          </h4>
         </div>
-        <form class="subscribe__form d-flex">
-            <div class="container container--custom">
-                <div class="row justify-content-center">
-                    <div class="form-group col-xs-12 col-xl-5 col-lg-6 col-sm-12 col-md-12 no-marg-no-padd">
-                        <label for="inputPassword2" class="sr-only">Password</label>
-                        <input type="email" class="form-control subscribe__custom-input" id="inputPassword2" placeholder="Введите электронную почту" required />
-                    </div>
-                    <button type="submit" class="col-xs-12 col-sm-12 col-lg-3 col-xl-2 col-md-12 subscribe__button orange-button">
-                Подписаться
-              </button>
-                </div>
+      </div>
+      <form class="subscribe__form d-flex">
+        <div class="container container--custom">
+          <div class="row justify-content-center">
+            <div
+              class="form-group col-xs-12 col-xl-5 col-lg-6 col-sm-12 col-md-12 no-marg-no-padd"
+            >
+              <label for="inputPassword2" class="sr-only">Password</label>
+              <input
+                type="email"
+                class="form-control subscribe__custom-input"
+                id="inputPassword2"
+                placeholder="Введите электронную почту"
+                required
+              />
             </div>
-        </form>
+            <button
+              type="submit"
+              class="col-xs-12 col-sm-12 col-lg-3 col-xl-2 col-md-12 subscribe__button orange-button"
+            >
+              Подписаться
+            </button>
+          </div>
+        </div>
+      </form>
     </section>
     @@include('../templates/footer.html')
 
     <!-- poput reviews -->
     <div class="popup popup--reviews">
-        <div class="text-right"><span class="close--popup">Закрыть <span> X</span></span>
-        </div>
-        <p class="popup__name">Отзывы <span>(2)</span></p>
-        <div class="reviews">
-            <article class="review-post">
-                <header>
-                    <p class="people-reviews-name">Леон Шермут</p>
-                    <p class="review-data">12.01.2019</p>
-                </header>
-                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum enim eos quam deserunt rem mollitia corrupti porro fugiat iste, architecto odio, recusandae reiciendis exercitationem cumque? Veniam nihil dicta quo unde?</div>
-            </article>
-            <article class="review-post">
-                <header>
-                    <p class="people-reviews-name">Леон Шермут</p>
-                    <p class="review-data">12.01.2019</p>
-                </header>
-                <div>At quos aperiam distinctio soluta similique quas eveniet qui nulla deleniti, assumenda sequi minus eaque eos voluptate non, laudantium necessitatibus unde officia ullam quo aspernatur veniam quae. Nobis, voluptatum molestiae?</div>
-            </article>
-            <article class="review-post">
-                <header>
-                    <p class="people-reviews-name">Леон Шермут</p>
-                    <p class="review-data">12.01.2019</p>
-                </header>
-                <div>Asperiores consectetur earum quidem perferendis molestiae recusandae eius qui! Rerum laudantium unde dolor eveniet deleniti id dolorem aliquam perspiciatis est in, repellat, aut dicta vitae ut nobis dolore deserunt voluptates!</div>
-            </article>
-            <article class="review-post">
-                <header>
-                    <p class="people-reviews-name">Леон Шермут</p>
-                    <p class="review-data">12.01.2019</p>
-                </header>
-                <div>Odio tempore nesciunt, tenetur doloremque rerum consectetur ipsa id corporis dignissimos libero alias iusto laboriosam aut reprehenderit laborum ad voluptas ducimus molestias voluptatem aspernatur rem aperiam dolores recusandae voluptate.
-                    Beatae?
-                </div>
-            </article>
-        </div>
-        <button class="dark-orange-button mt-4 text-center">Написать отзыв</button>
+      <div class="text-right">
+        <span class="close--popup">Закрыть <span> X</span></span>
+      </div>
+      <p class="popup__name">Отзывы <span>(2)</span></p>
+      <div class="reviews">
+        <article class="review-post">
+          <header>
+            <p class="people-reviews-name">Леон Шермут</p>
+            <p class="review-data">12.01.2019</p>
+          </header>
+          <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
+            enim eos quam deserunt rem mollitia corrupti porro fugiat iste,
+            architecto odio, recusandae reiciendis exercitationem cumque? Veniam
+            nihil dicta quo unde?
+          </div>
+        </article>
+        <article class="review-post">
+          <header>
+            <p class="people-reviews-name">Леон Шермут</p>
+            <p class="review-data">12.01.2019</p>
+          </header>
+          <div>
+            At quos aperiam distinctio soluta similique quas eveniet qui nulla
+            deleniti, assumenda sequi minus eaque eos voluptate non, laudantium
+            necessitatibus unde officia ullam quo aspernatur veniam quae. Nobis,
+            voluptatum molestiae?
+          </div>
+        </article>
+        <article class="review-post">
+          <header>
+            <p class="people-reviews-name">Леон Шермут</p>
+            <p class="review-data">12.01.2019</p>
+          </header>
+          <div>
+            Asperiores consectetur earum quidem perferendis molestiae recusandae
+            eius qui! Rerum laudantium unde dolor eveniet deleniti id dolorem
+            aliquam perspiciatis est in, repellat, aut dicta vitae ut nobis
+            dolore deserunt voluptates!
+          </div>
+        </article>
+        <article class="review-post">
+          <header>
+            <p class="people-reviews-name">Леон Шермут</p>
+            <p class="review-data">12.01.2019</p>
+          </header>
+          <div>
+            Odio tempore nesciunt, tenetur doloremque rerum consectetur ipsa id
+            corporis dignissimos libero alias iusto laboriosam aut reprehenderit
+            laborum ad voluptas ducimus molestias voluptatem aspernatur rem
+            aperiam dolores recusandae voluptate. Beatae?
+          </div>
+        </article>
+      </div>
+      <button class="dark-orange-button mt-4 text-center">
+        Написать отзыв
+      </button>
     </div>
     <!-- add reviews -->
     <div class="popup popup--reviews-add">
-        <div class="text-right"><span class="close--popup">Закрыть <span> X</span></span>
+      <div class="text-right">
+        <span class="close--popup">Закрыть <span> X</span></span>
+      </div>
+      <p class="popup__name">Написать отзыв</p>
+      <form action="">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-control"
+            name="user-review-name"
+            placeholder="Ваше имя"
+          />
         </div>
-        <p class="popup__name">Написать отзыв</p>
-        <form action="">
-            <div class="form-group"><input type="text" class="form-control" name="user-review-name" placeholder="Ваше имя"></div>
-            <div class="form-group"><input type="email" class="form-control" name="user-review-email" placeholder="Ваша электронная почта" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required></div>
-            <div class="form-group"><textarea name="review-text" id="review-text" cols="30" rows="8" class="form-control" placeholder="Напишите здесь Ваш отзыв о данном туре"></textarea></div>
-            <div class="form-row">
-                <div class="col-6"><button class="dark-orange-button w-100" disabled>Отправить</button></div>
-                <div class="col-6"><button class="dark-orange--invers w-100">Отмена</button></div>
-            </div>
-        </form>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            name="user-review-email"
+            placeholder="Ваша электронная почта"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            name="review-text"
+            id="review-text"
+            cols="30"
+            rows="8"
+            class="form-control"
+            placeholder="Напишите здесь Ваш отзыв о данном туре"
+          ></textarea>
+        </div>
+        <div class="form-row">
+          <div class="col-6">
+            <button class="dark-orange-button w-100" disabled>Отправить</button>
+          </div>
+          <div class="col-6">
+            <button class="dark-orange--invers w-100">Отмена</button>
+          </div>
+        </div>
+      </form>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
 
     <script src="/js/slick.min.js"></script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/gijgo@1.9.11/js/gijgo.min.js"
+      type="text/javascript"
+    ></script>
+    <link
+      href="https://unpkg.com/gijgo@1.9.11/css/gijgo.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <script>
-        $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 6,
-            slidesToScroll: 1,
-            vertical: true,
-            asNavFor: '.slider-for',
-            dots: false,
-            arrows: false,
-            focusOnSelect: true
-        });
-        // Cache selectors
-        var lastId,
-            topMenu = $("#in-sticky"),
-            topMenuHeight = topMenu.outerHeight(),
-            menuItems = topMenu.find("a"),
-            scrollItems = menuItems.map(function() {
-                var item = $($(this).attr("href"));
-                if (item.length) {
-                    return item;
-                }
-            });
-
-
-        menuItems.click(function(e) {
-            var href = $(this).attr("href"),
-                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-            $('html, body').stop().animate({
-                scrollTop: offsetTop
-            }, 300);
-            e.preventDefault();
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        asNavFor: ".slider-nav"
+      });
+      $(".slider-nav").slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        vertical: true,
+        asNavFor: ".slider-for",
+        dots: false,
+        arrows: false,
+        focusOnSelect: true
+      });
+      // Cache selectors
+      var lastId,
+        topMenu = $("#in-sticky"),
+        topMenuHeight = topMenu.outerHeight(),
+        menuItems = topMenu.find("a"),
+        scrollItems = menuItems.map(function() {
+          var item = $($(this).attr("href"));
+          if (item.length) {
+            return item;
+          }
         });
 
-        $(window).scroll(function() {
-            var fromTop = $(this).scrollTop() + topMenuHeight;
-            var cur = scrollItems.map(function() {
-                if ($(this).offset().top < fromTop)
-                    return this;
-            });
-            cur = cur[cur.length - 1];
-            var id = cur && cur.length ? cur[0].id : "";
+      menuItems.click(function(e) {
+        var href = $(this).attr("href"),
+          offsetTop =
+            href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+        $("html, body")
+          .stop()
+          .animate(
+            {
+              scrollTop: offsetTop
+            },
+            300
+          );
+        e.preventDefault();
+      });
 
-            if (lastId !== id) {
-                lastId = id;
-                menuItems
-                    .parent().removeClass("active")
-                    .end().filter("[href='#" + id + "']").parent().addClass("active");
-            }
+      $(window).scroll(function() {
+        var fromTop = $(this).scrollTop() + topMenuHeight;
+        var cur = scrollItems.map(function() {
+          if ($(this).offset().top < fromTop) return this;
         });
-        $('.accordion__head').click(function(evebt) {
-            var target = $(event.target);
-            if (target.hasClass('active')) {
-                $('.accordion__head').removeClass('active');
-            } else {
-                $('.accordion__head').removeClass('active');
-                target.addClass('active');
+        cur = cur[cur.length - 1];
+        var id = cur && cur.length ? cur[0].id : "";
 
-            }
-
-        });
-        $('.btn-rewiews').click(function() {
-            $('.popup--reviews').toggleClass('open');
-            $('#overlay').addClass('overlay--active');
-        });
-        $('.close--popup').click(function() {
-            closePopup()
-        });
-
-        function closePopup() {
-            $('.popup--reviews').removeClass('open');
-            $('#overlay').removeClass('overlay--active');
+        if (lastId !== id) {
+          lastId = id;
+          menuItems
+            .parent()
+            .removeClass("active")
+            .end()
+            .filter("[href='#" + id + "']")
+            .parent()
+            .addClass("active");
         }
+      });
+      $(".accordion__head").click(function(evebt) {
+        var target = $(event.target);
+        if (target.hasClass("active")) {
+          $(".accordion__head").removeClass("active");
+        } else {
+          $(".accordion__head").removeClass("active");
+          target.addClass("active");
+        }
+      });
+      $(".btn-rewiews").click(function() {
+        $(".popup--reviews").toggleClass("open");
+        $("#overlay").addClass("overlay--active");
+      });
+      $(".close--popup").click(function() {
+        closePopup();
+      });
+
+      function closePopup() {
+        $(".popup--reviews").removeClass("open");
+        $("#overlay").removeClass("overlay--active");
+      }
     </script>
     <script src="/js/script.js"></script>
-</body>
-
+  </body>
 </html>

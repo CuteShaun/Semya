@@ -9,11 +9,18 @@
       />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <link rel="stylesheet" href="../css/bootstrap.min.css" />
-      <link href="../css/styles.min.css" rel="stylesheet" />
       <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&amp;subset=cyrillic"
         rel="stylesheet"
       />
+      <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+      />
+      <link href="../css/styles.min.css" rel="stylesheet" />
+
       <title>Бюро путешествий семья</title>
     </head>
   </head>
@@ -212,6 +219,8 @@
                         id="order-name"
                         name="Имя"
                       />
+                      <i class="error-icon fas fa-exclamation-circle"></i>
+                      <i class="sucess-icon fas fa-check-circle"></i>
                     </div>
 
                     <div class="custom-select__wrapper">
@@ -222,6 +231,8 @@
                         id="order-surname"
                         name="Фамилия"
                       />
+                      <i class="error-icon fas fa-exclamation-circle"></i>
+                      <i class="sucess-icon fas fa-check-circle"></i>
                     </div>
 
                     <div class="custom-select__wrapper">
@@ -232,6 +243,8 @@
                         id="order-email"
                         name="Электронная почта"
                       />
+                      <i class="error-icon fas fa-exclamation-circle"></i>
+                      <i class="sucess-icon fas fa-check-circle"></i>
                     </div>
 
                     <div class="custom-select__wrapper">
@@ -239,10 +252,12 @@
                         class="form-control order-input"
                         type="text"
                         inputmode="numeric"
-                        placeholder="Контактный номер телефона  "
+                        placeholder="Номер в формате +380"
                         id="order-tel"
                         name="Телефон"
                       />
+                      <i class="error-icon fas fa-exclamation-circle"></i>
+                      <i class="sucess-icon fas fa-check-circle"></i>
                     </div>
 
                     <div class="user-form__button-box">
@@ -254,9 +269,7 @@
 
                   <div
                     class="user-form__filled-content user-form__filled-content--2"
-                  >
-                  
-                  </div>
+                  ></div>
                 </section>
 
                 <!-- <section class="user-form__section">
@@ -363,7 +376,11 @@
                 <div
                   class="user-form__button-box user-form__button-box--submit"
                 >
-                  <button type="submit" class="user-button disabled submit" id="submit-btn">
+                  <button
+                    type="submit"
+                    class="user-button disabled submit"
+                    id="submit-btn"
+                  >
                     Отправить заявку
                   </button>
                 </div>
