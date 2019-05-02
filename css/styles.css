@@ -1658,7 +1658,7 @@ img.badge {
   height: 268px; }
 
 .subscribe {
-  background-image: url(../../img/paris-2017-home.png);
+  background-image: url(../img/paris-2017-home.png);
   -webkit-background-size: cover;
           background-size: cover;
   background-position: top center; }
