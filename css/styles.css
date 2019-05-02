@@ -1322,6 +1322,10 @@ img.badge {
   .price-block-info__item ul li + li {
     margin-top: 2.4rem; }
 
+@media (max-width: 991px) {
+  .tag-box {
+    list-style-position: inside; } }
+
 .tag {
   display: inline-block;
   font-size: 1.4rem;
@@ -1654,7 +1658,7 @@ img.badge {
   height: 268px; }
 
 .subscribe {
-  background-image: url(/img/paris-2017-home.png);
+  background-image: url(img/paris-2017-home.png);
   -webkit-background-size: cover;
           background-size: cover;
   background-position: top center; }
